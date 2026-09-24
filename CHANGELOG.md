@@ -43,3 +43,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Greenfield and density reasoning (P1.4):
   - `plim-design`: new section "When there is no system to preserve", covering starting from evidence, deriving each foundation from its job, choosing density per context, how much structure to build, convention versus context, avoiding premature proliferation, resolving tensions explicitly, and greenfield failure modes.
   - `recipes/build-interface.md` now points to that section; `foundations/density.md` gains a pointer while it remains a placeholder.
+- Automation and agency (P1.5):
+  - `plim-design`: new section "Automation and agency". Consequence, reversibility, confidence, expressed intent, and frequency decide between act, act and inform, suggest, preview, ask, and confirm. It covers when interruption is justified, applies the model to destructive, background, default, AI-generated, batch, irreversible, recurring, and long-running actions, and gives a test for reduced work versus removed control. The tension row and failure modes link to it.
+  - `plim-review`: the Interaction lens judges automation against consequence and reversibility.

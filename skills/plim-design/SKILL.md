@@ -265,7 +265,7 @@ Principles are forces to balance (§4, §9). More whitespace, consistency, expre
 | Consistency ↔ Context | Same treatment where it shouldn't be | Nothing predictable | Which relationships stay stable, and which adapt? |
 | Restraint ↔ Expression | No character | Competes with its purpose | What level of expression serves this product and its users? |
 | Density ↔ Breathing room | Inefficient, scrolling everywhere | Overwhelming | What density fits the task, expertise, and frequency of use? |
-| Automation ↔ Agency | Unnecessary work | User loses understanding or control | What should the system do, and where should the person decide? |
+| Automation ↔ Agency | Unnecessary work | User loses understanding or control | What should the system do, and where should the person decide? See "Automation and agency". |
 | Innovation ↔ Familiarity | Nothing distinctive | Novelty without value | Does the novelty create meaningful value? |
 
 When you resolve a tension, say which side dominates here, why, and what you gave up. A trading terminal and a meditation app should resolve Density ↔ Breathing room in opposite directions, and both can be right.
@@ -313,6 +313,54 @@ Common failures: layout that jumps as content arrives; focus lost when an elemen
 - **Agency.** In each state, what can the person still do? Can they cancel a long operation, retry a failure, undo, or keep working elsewhere while something loads? A state that removes options needs a reason (§8.3).
 
 The specialist skills apply this model: [`plim-accessibility`](../plim-accessibility/SKILL.md) covers how states and transitions are perceived and operated, [`plim-responsive`](../plim-responsive/SKILL.md) how they hold up across contexts, [`plim-review`](../plim-review/SKILL.md) how to assess them, and [`plim-beautify`](../plim-beautify/SKILL.md) how to improve them.
+
+## Automation and agency
+
+What should the system do on the person's behalf, and where should the person decide (§9)? Neither answer is safe by default. Too little automation creates unnecessary work and interruptions; too much leaves people not understanding what happened or unable to change it (§8.3, Law 5).
+
+### What decides it
+
+For each thing the system could do for the person, weigh:
+
+- **Consequence.** What is affected if it's wrong (data, money, time, other people, safety), and who bears the cost.
+- **Reversibility.** Can it be fully undone, partly undone, or not at all? For how long? Does it reach outside the product: a sent message, a payment, a synced deletion?
+- **Confidence.** How likely the system is to do what the person actually wants. Confidence runs from a rule the person set themselves, through a prediction, to an AI inference. Consider also whether the person can tell in advance what will happen.
+- **Expressed intent.** Has the person already asked for this, set it up, or is it the point of the task? Or would the system be acting on a guess?
+- **Frequency.** How often does it happen? Frequent small decisions are where automation saves the most work, and where interruptions cost the most.
+
+### The range of responses
+
+From most system initiative to least:
+
+| Response | Fits when |
+| --- | --- |
+| **Act** | Low consequence, easily reversed, high confidence, or intent already expressed. Stay silent only if the person has no reason to know. |
+| **Act and inform** | The action is reversible, but the person should know it happened. Show what changed and offer undo in place. |
+| **Suggest** | The system has a useful idea but the choice is the person's: a pre-filled value they can see and change, a draft to accept or edit. |
+| **Preview** | The outcome is hard to predict, as with batch changes, generated content, or publishing. Show what will happen before it does. |
+| **Ask** | Only the person has the information, or the choice is theirs by nature: recipients, tone, priority. |
+| **Confirm** | The person initiated something consequential that can't be undone. Name the specific consequence; generic "Are you sure?" dialogs teach people to click through. |
+
+Consequence and reversibility do most of the work. When an action can be made reversible (a trash, a grace period, a scheduled send), undo usually serves people better than a confirmation, and it keeps confirmations meaningful for what truly can't be undone. When confidence is low and consequence high, don't automate; help the person decide.
+
+**Interruption** is justified when the cost of the person not knowing now is higher than the cost of breaking their work: an imminent consequence, something time-sensitive, or a decision needed before anything can continue. Otherwise, inform in place and let them attend when ready (see "Attention is a resource").
+
+### Situations where this matters most
+
+- **Destructive actions.** Match protection to reversibility and reach. Deletion with undo needs little ceremony; permanent loss of shared data needs deliberate confirmation that says what, and whose, will be lost.
+- **Background automation.** People should be able to find what ran, what it changed, and how to pause or stop it. Silent failures matter more than silent successes, so surface them.
+- **Smart defaults.** A default is a decision made on the person's behalf. It should be what they would most likely choose, and safe to accept without examination, especially for privacy, sharing, and billing. A default that serves the business at the person's expense is manipulation (Law 5).
+- **AI-generated actions.** Confidence is lower, and it's harder for the person to judge, because generated output can look authoritative. Make clear what was generated, and let the person edit, accept, or reject it. Keep consequential or irreversible effects behind their explicit go-ahead. The more autonomously it acts, the more it needs a visible record and undo.
+- **Batch operations.** Consequence multiplies with scope. State the scope in concrete terms ("Delete 248 files"), let people see what's included, make the whole batch undoable where possible, and report partial failures item by item.
+- **Irreversible actions.** Say so before, not after, and make the consequence concrete. Making the action reversible is often better than a stronger warning.
+- **Recurring actions.** Intent was expressed once, so show what is scheduled, what ran, and what's next, and how to change, pause, or stop it. Give notice before runs with real consequence, such as a charge.
+- **Long-running operations.** Show progress, allow cancellation (and say what cancelling leaves behind), let people keep working, keep partial results when something is interrupted, and report completion where they will see it.
+
+### Reduced work or removed control?
+
+After the automation acts, does the person understand what happened, and could they have changed it if they wanted to? If yes, it reduced their work. If they are surprised, can't find what changed, or can't opt out, it removed control. Automation also removes control when it takes over a judgement that belongs to the person, such as what to say, whom to include, or what to spend.
+
+The same reasoning governs your own conduct as an agent: see "Human judgment".
 
 ## Design the edges
 
@@ -415,6 +463,7 @@ Trivial changes need no record. If you cannot fill in "why", reconsider the chan
 - Adding emphasis until nothing stands out.
 - Forcing a single focal point onto a task that needs distributed attention, or mistaking equal loudness for distributed attention.
 - Designing states one at a time: each fine alone, broken in combination or in transition.
+- Automating because it's possible, or asking because it feels safe: confirming everything until confirmations mean nothing, or acting silently on guesses the person discovers later.
 - Treating minimalism, whitespace, or consistency as goals in themselves.
 - Inventing certainty about brand, audience, or strategy.
 - Producing change to show effort when the right answer was restraint.
