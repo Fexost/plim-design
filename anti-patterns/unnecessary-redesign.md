@@ -47,4 +47,4 @@ Refusing all change preserves real problems. Improve before replacing does not m
 
 ## See also
 
-[Legacy Bootstrap interface](../examples/case-studies/07-legacy-bootstrap.md), [Little or no change](../examples/case-studies/12-little-or-no-change.md)
+[Legacy Bootstrap interface](../examples/case-studies/07-legacy-bootstrap.md), [Polish only](../examples/case-studies/12-little-or-no-change.md)

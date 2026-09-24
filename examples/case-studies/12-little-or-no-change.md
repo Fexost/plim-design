@@ -1,35 +1,41 @@
-# When the right outcome is little or no change
+# Polish only: a plain tool that works
 
-**Skills:** plim-review · **Stress test:** Scenarios I and J
+**Skills:** plim-review · **Stress test:** Scenarios I and J · **Outcome:** polish only
 
 ## Context
 
-A command-line-style developer tool with a web dashboard: monospaced type, a near-monochrome palette, dense lists, no illustrations, keyboard shortcuts for everything. The user asks: "Can you make this more beautiful? It feels a bit plain."
+A command-line-style developer tool with a web dashboard: monospaced type, a near-monochrome palette, dense lists, no illustrations, keyboard shortcuts for everything. The user asks: "Can you make this more beautiful? It feels a bit plain." The product has no brand guidelines calling for more expression, and its users are developers who praise its speed.
 
-## Existing problem
-
-Possibly none. The user's discomfort is with plainness, not with a failure they can name.
+For a case where the right answer is no change at all, see [case 17](17-genuine-no-change.md).
 
 ## What the agent notices
 
-- The attention hierarchy matches the task: the current build status reads first, then recent runs, then configuration.
-- The minimalism is intentional and fits an audience that values speed, density, and keyboard control.
-- States are thorough: running, queued, failed with logs, cancelled, and empty projects.
-- Accessibility is solid: visible focus, real headings, text status labels, good contrast.
-- Candidate "beautifications" (gradients, cards, illustrations, larger type, animation) would each spend attention without communicating anything, and would slow expert use.
-- Two genuine polish issues: inconsistent spacing between list groups, and a hover state that is barely distinguishable from the selected state.
+- The attention hierarchy matches the task: current build status reads first, then recent runs, then configuration.
+- **None, intentional.** The minimalism is deliberate and its purpose is served: the audience values speed, density, and keyboard control, and uses the tool heavily.
+- States are thorough (running, queued, failed with logs, cancelled, empty projects), and accessibility requirements are met (visible focus, real headings, text status labels, readable contrast).
+- **Under-expression check.** "Plain" could signal an identity gap. Here there is no evidence of one: no brand direction calls for more, and users don't describe the tool as generic. The discomfort is the user's taste, so it's a preference, but the user is entitled to choose more character.
+- **Polish, accidental.** Spacing between list groups departs from the tool's own scale.
+- **Polish, accidental.** Hover is barely distinguishable from selected, an objective state defect.
 
-## Relevant Plim principles
+## Principles and tension
 
-Doing nothing is valid (§18), Restraint (§8.7), Minimalism is neither good nor bad (§21), Identity without imposition (§15), Distinguish change from improvement (§18).
+Doing nothing is valid (§18), Restraint (§8.7), Minimalism is neither good nor bad (§21), Identity without imposition (§15).
 
-## Tension
+**Restraint ↔ Expression.** The user wants more character; the product's current character is its restraint.
 
-**Restraint ↔ Expression.** The user wants more character; the product's character is its restraint.
+## Alternatives considered
+
+- **Add decoration** (gradients, cards, illustrations, larger type, animation). Rejected for this tool: each would spend attention without communicating anything, and would slow expert use.
+- **No change at all.** Rejected: there are two genuine rough edges against the tool's own system.
+- **Polish the two findings, and offer character as the user's choice.** Chosen.
 
 ## Decision
 
-Recommend no meaningful visual change. Fix the two polish issues. Explain why adding decoration would reduce clarity, and offer, if the user wants more character, a low-risk option that fits the identity, such as refining the monospaced typography or a single considered accent for status. Leave that decision to them.
+For this tool, fix the two polish findings and recommend no further visual change, explaining why. If the user wants more character, offer options that fit the identity: refined monospaced typography, or one considered accent for status. The user decides; if they choose one, the agent implements it well.
+
+## Trade-off accepted
+
+The user doesn't get the visible transformation they may have expected. They get a clear explanation and a choice instead of an unrequested restyle.
 
 ## Implementation direction
 
@@ -39,4 +45,4 @@ Recommend no meaningful visual change. Fix the two polish issues. Explain why ad
 
 ## Expected result
 
-The tool stays fast, dense, and recognisably itself, with two rough edges removed. The user gets a clear explanation instead of an unrequested restyle, and keeps the decision about character in their hands.
+The tool stays fast, dense, and recognisably itself, with two rough edges removed. The decision about character stays with the user.

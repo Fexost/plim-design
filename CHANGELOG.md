@@ -32,3 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Accessibility and human judgment policy (first P1 item): "Accessibility is a foundational constraint, not a preference. Human judgment operates within that constraint."
   - `plim-accessibility`: new "Requirements, recommendations, and human judgment" section distinguishing requirements (at the product's conformance target, or WCAG 2.2 AA by default), above-floor improvements, and preferences; a procedure for when an explicit human direction can't meet a requirement; conflict table and failure modes updated to match.
   - `plim-design`, `AGENTS.md`, and case study 08 aligned with the policy and its terms.
+- Case studies audited and strengthened (P1.2):
+  - All twelve existing cases revised to show findings with severity and intent, the chosen outcome, alternatives considered, and the trade-off accepted, with decisions scoped to the case. Removed implied universal rules (for example, a hard-coded neutral palette in case 07 and an elevation rule in case 11) and the collection's bias towards quieter outcomes.
+  - Case 12 retitled "Polish only" to match its outcome.
+  - Five new cases: under-expressed brand (13), human-chosen bold direction (14), mature design system (15), explicit redesign request (16), and genuine no change (17).
+  - `examples/README.md` index updated with each case's outcome.
