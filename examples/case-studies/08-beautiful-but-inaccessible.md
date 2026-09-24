@@ -1,6 +1,6 @@
 # Beautiful but inaccessible interface
 
-**Skills:** plim-accessibility, plim-review · **Stress test:** Scenario G · **Outcome:** targeted improvement
+**Skills:** plim-accessibility, plim-review · **Outcome:** targeted improvement
 
 ## Context
 

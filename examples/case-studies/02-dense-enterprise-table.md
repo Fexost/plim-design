@@ -1,6 +1,6 @@
 # Dense enterprise table
 
-**Skills:** plim-design, plim-responsive, plim-accessibility · **Stress test:** Scenario B · **Outcome:** targeted improvement
+**Skills:** plim-design, plim-responsive, plim-accessibility · **Outcome:** targeted improvement
 
 ## Context
 

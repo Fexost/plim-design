@@ -1,13 +1,5 @@
 # Tables
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-responsive`](../skills/plim-responsive/SKILL.md), "Surfaces" (Tables), [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "Components that commonly go wrong" (Tables), and [`plim-design`](../skills/plim-design/SKILL.md), "Choosing density". Worked example: [case 02](../examples/case-studies/02-dense-enterprise-table.md).
 
-Tabular data: alignment, headers, actions, and responsive degradation.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [patterns/search.md](search.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

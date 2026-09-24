@@ -4,7 +4,8 @@ description: >-
   Core Plim Design reasoning for any interface work in any framework or design
   system. Use when designing UI, deciding whether and how an interface should
   change, judging a design question, preserving an existing design system or
-  brand, or handling states and edge cases. Load before the other plim-* skills.
+  brand, designing a shared design system or component library, or handling
+  states and edge cases. Load before the other plim-* skills.
 ---
 
 # Plim Design
@@ -17,6 +18,7 @@ The goal is not prettier output. The goal is better decisions: every significant
 
 - Designing a new screen, flow, or component, or a new product with no established system (see "When there is no system to preserve").
 - Deciding whether an existing interface should change at all, and if so, how much.
+- Designing or changing a design system or component library that several products share (see [`systems.md`](systems.md)).
 - Answering design questions ("should this be a modal?", "is this too dense?").
 - As the foundation for the other skills:
 
@@ -34,7 +36,7 @@ The eight laws (§7) translate into behaviour:
 
 1. **Intent before appearance.** Start from "what should this help someone understand or do?", not "how can this look better?"
 2. **Meaning before decoration.** Every visual treatment should communicate something: hierarchy, grouping, state, affordance, status, or identity.
-3. **Clarity before complexity.** People should be able to tell where they are, what matters, what they can do, what is happening, and how to recover. Clarity is not minimalism.
+3. **Clarity before complexity.** People should be able to tell where they are, what matters, what they can do, what is happening, and how to recover. Clarity is not minimalism. Words are part of it: labels, messages, and voice are design material (see [`language.md`](language.md)).
 4. **Coherence without uniformity.** Similar things feel related; different things are distinguishable. Consistency lives in relationships, not identical values.
 5. **Respect the person.** Protect agency, attention, time, privacy, accessibility, dignity, and trust. No manipulation, no unexplained automation.
 6. **Design for reality.** The interface is not the screenshot. Real data, devices, input, latency, errors, and accessibility settings are the product.
@@ -47,7 +49,7 @@ Thirteen stages (§19). They describe the reasoning a good decision contains, no
 
 | Stage | The question | When it deserves real time |
 | --- | --- | --- |
-| Understand | What is the product, who uses it, what are they doing? | Always, briefly. Deeply when the product is unfamiliar. |
+| Understand | What is the product, who uses it, what are they doing? What has already been decided? | Always, briefly, including the product's decision record if it has one. Deeply when the product is unfamiliar. |
 | Identify intent | What should this experience help the person understand or do? | Always. If you cannot answer, stop and ask. |
 | Establish priority | What matters most, what is secondary, what can be quiet? | Any change that affects layout or emphasis. |
 | Understand context | Device, input, expertise, frequency, brand, existing system, constraints? | Whenever the answer would change the solution. |
@@ -65,6 +67,7 @@ Thirteen stages (§19). They describe the reasoning a good decision contains, no
 
 For an existing product, inventory the system before proposing anything (§14, §18). Look for:
 
+- the product's decision record, if it keeps one: what it marks as decided, conventional, or still open (see [`decision-records.md`](decision-records.md))
 - tokens (CSS custom properties, Sass variables, theme files, utility-framework configuration)
 - typography, colour, spacing, shape, border, and elevation conventions
 - components and their variants, and which variant is used for what
@@ -90,7 +93,7 @@ Separate two things that can look alike:
 | How you know | It is documented, tokenised, or used the same way across the product | It appears once or inconsistently; it has no token or matches no documented role |
 | What to judge | Whether it is **used as the system intends** here, and whether the system serves this product's purpose and users | Whether it communicates anything at all |
 
-The anti-pattern guidance ([`anti-patterns/`](../../anti-patterns/README.md) and the cliché table in [`plim-beautify`](../plim-beautify/SKILL.md)) is mostly useful for the second column. A system convention that resembles a listed pattern is not a finding by resemblance alone. Misuse of a convention is a finding: using the system's entity card to wrap a single field, or its highest elevation for inline content. A convention that genuinely harms the product (fails contrast, cannot express a needed state) is a finding about the system, and changing it is a system-level decision for a human (see "Human judgment").
+The anti-pattern guidance ([`anti-patterns/`](../../anti-patterns/README.md) and the cliché table in [`plim-beautify`](../plim-beautify/SKILL.md)) is mostly useful for the second column. A system convention that resembles a listed pattern is not a finding by resemblance alone. Misuse of a convention is a finding: using the system's entity card to wrap a single field, or its highest elevation for inline content. A convention that genuinely harms the product (fails contrast, cannot express a needed state) is a finding about the system, and changing it is a system-level decision for a human (see "Human judgment"). For work on the shared system itself, see [`systems.md`](systems.md).
 
 ## When there is no system to preserve
 
@@ -125,7 +128,7 @@ Partial vocabularies still count. A framework's components carry behaviour and a
 
 Each foundation can land anywhere in its range: one typeface or several, two colours or many roles, sharp or soft shapes, no elevation or several layers, still or lively motion. The evidence decides.
 
-Record the result as a short rationale: for each foundation, the choice and the reason. It is what later decisions are tested against, and it replaces "that's how it looked" as the justification.
+Record the result as a short rationale: for each foundation, the choice and the reason. It is what later decisions are tested against, and it replaces "that's how it looked" as the justification. Keep it in the product's decision record as a Foundation entry ([`decision-records.md`](decision-records.md)).
 
 ### Choosing density
 
@@ -150,6 +153,8 @@ Match the amount of system to what the product needs now and can reasonably fore
 - **Less structure** when the product is single-purpose, short-lived (a campaign, an exhibition), still finding its shape, or editorial, with each page composed individually.
 
 Structure also shows. A highly systematic product and a composed, editorial one look different, and either can be right.
+
+For a design system or component library that several products or teams share, see [`systems.md`](systems.md).
 
 ### Convention or context
 
@@ -301,7 +306,7 @@ Design the likely combinations, not every permutation.
 For each meaningful change between states, decide:
 
 - **What triggers it:** the person, the system, or time, and whether the person expects it.
-- **How it's communicated:** in place, through feedback near where the person is looking, by moving focus, by announcement, or by motion. Use whatever fits the product and the consequence (§8.14).
+- **How it's communicated:** in place, through feedback near where the person is looking, by moving focus, by announcement, or by motion, and in words whose tone fits the state (see [`language.md`](language.md), "Tone follows state and consequence"). Use whatever fits the product and the consequence (§8.14).
 - **What survives it:** input, scroll position, selection, and focus.
 
 Common failures: layout that jumps as content arrives; focus lost when an element disappears; a confirmation that vanishes before it can be read; an error that replaces the content the person needs to fix it.
@@ -413,6 +418,26 @@ Plim improves the quality of decisions, not the product's appearance (§15). Pre
 
 Muting is not a safe default. **Under-expression is a design problem** when the product's purpose, audience, or brand calls for stronger character and the interface is generic, muted, or interchangeable: a consumer brand that could be anyone's, an editorial product without a voice, a moment of achievement that looks like a settings page (§8.15, Restraint ↔ Expression in §9). Treat it as a finding with the same evidence standard as any other.
 
+## Outcomes
+
+After diagnosing an existing interface, choose one outcome and state it, with the reason, before changing anything. This is the scale every skill uses; [`plim-beautify`](../plim-beautify/SKILL.md) defines the steps that follow each one, and [`plim-review`](../plim-review/SKILL.md) recommends one.
+
+| Outcome | Appropriate when |
+| --- | --- |
+| **No change** | Structure, hierarchy, states, and identity serve the product; remaining findings are preferences |
+| **Polish only** | The design is sound; there are rough edges against its own system, or objective craft defects |
+| **Targeted improvement** | Specific findings in specific places |
+| **Structural intervention** | Hierarchy, composition, or information-architecture problems across a screen or flow |
+| **Redesign** | You can name what the existing design prevents that improvement cannot fix. Propose it; don't start it unasked |
+| **Execute a human direction** | A human has explicitly decided the direction (a redesign, a brand treatment, a bold look). Diagnosis now governs how it is executed, not whether (see "Human judgment") |
+
+Severity (Critical, Important, Polish, None) is defined in [`plim-review`](../plim-review/SKILL.md), "Classify findings". Two kinds of finding override the outcome:
+
+- **Critical findings.** Always reported, then addressed or explicitly deferred by a human.
+- **Accessibility requirement failures, at any severity.** Addressed, recorded as open, or explicitly deferred by a human (see [`plim-accessibility`](../plim-accessibility/SKILL.md), "Requirements, recommendations, and human judgment"). An Important requirement failure is not optional because it isn't Critical.
+
+"No change" or "polish only" cannot leave either kind silently in place; when one exists, the outcome is at least a targeted improvement for that finding.
+
 ## Doing nothing is a valid outcome
 
 You are not obliged to produce a visible change (§18). Recommend little or no change when:
@@ -430,7 +455,7 @@ Say so plainly, explain why, and name anything small that is still worth doing.
 
 Two limits:
 
-- **Doing nothing never hides a Critical problem.** If you find something that blocks a task, excludes people, misleads, or risks harm (see [`plim-review`](../plim-review/SKILL.md)), report it, whatever else you recommend. It is then addressed, or a human explicitly defers it.
+- **Doing nothing never hides a Critical problem or a requirement failure.** If you find something that blocks a task, excludes people, misleads, or risks harm, or that fails an accessibility requirement, report it, whatever else you recommend (see "Outcomes" above).
 - **Doing nothing is your recommendation, not a veto.** When a human has explicitly decided on a change, see "Human judgment" below.
 
 ## Surface uncertainty
@@ -439,6 +464,7 @@ Good design intelligence knows when it does not know enough (§18). When product
 
 - if the answer would change the solution substantially, ask
 - otherwise, state your assumption, choose the option that is easiest to reverse, and flag it
+- ask the person who owns the decision, which is not always the person asking. When stakeholders disagree, surface the disagreement rather than choosing between them (see [`plim-review`](../plim-review/SKILL.md), [`evidence.md`](../plim-review/evidence.md), "Who decides")
 
 The more consequential the change (brand, navigation, flows other teams depend on), the more human review it needs. Keep changes understandable, reviewable, incremental, and reversible.
 
@@ -464,13 +490,13 @@ When a human has clearly chosen an aesthetic direction, a redesign, a brand trea
 - **Don't resist.** Don't re-argue the decision, water it down, or silently substitute your preference (for example, implementing a muted version of a bold direction, or a "safer" palette than the one asked for).
 - **Execute with care.** Your Plim reasoning now applies to *how*: coherence, hierarchy within the chosen direction, states, edges, responsiveness, accessibility, and technical quality.
 
-A decision is an explicit instruction or a confirmed choice. An aesthetic adjective ("make it premium") is a request to interpret, not a decision; interpret it as in [`plim-beautify`](../plim-beautify/SKILL.md).
+A decision is an explicit instruction or a confirmed choice, including one recorded in the product's decision record by an earlier session (see [`decision-records.md`](decision-records.md)). An aesthetic adjective ("make it premium") is a request to interpret, not a decision; interpret it as in [`plim-beautify`](../plim-beautify/SKILL.md).
 
 ### Not blind obedience
 
 Respecting a decision does not mean hiding its consequences. Always surface, when they apply:
 
-- **Accessibility.** Applicable accessibility requirements constrain how a direction is implemented; they are not weakened because a human prefers the result. Above-floor improvements are recommendations the human may decline. When a chosen direction can't meet a requirement as specified, explain the conflict, offer accessible alternatives that keep as much of the direction as possible, and implement the one the human chooses. If they reject every alternative, don't implement the failing part; implement the rest and record that part as open. The full policy is in [`plim-accessibility`](../plim-accessibility/SKILL.md), "Requirements, recommendations, and human judgment".
+- **Accessibility.** Applicable accessibility requirements constrain how a direction is implemented; they are not weakened because a human prefers the result. Above-floor improvements are recommendations the human may decline. When a chosen direction can't meet a requirement as specified, explain the conflict, offer accessible alternatives that keep as much of the direction as possible, and implement the one the human chooses. If they reject every alternative, don't implement the failing part; implement the rest and record that part as an Open entry in the decision record. The full policy is in [`plim-accessibility`](../plim-accessibility/SKILL.md), "Requirements, recommendations, and human judgment".
 - **Safety and trust.** Deceptive or manipulative patterns, data loss, privacy exposure (Law 5).
 - **Technical constraints.** Breaking changes, performance costs, effects on other teams or consumers of a shared system.
 
@@ -485,6 +511,8 @@ For each meaningful change, be able to state:
 - **Preserved:** what you deliberately kept
 
 Trivial changes need no record. If you cannot fill in "why", reconsider the change.
+
+These explanations belong in your report. Write to the product's decision record only when a decision-worthy event occurs: a human decision, a convention's status, greenfield foundations, an unresolved consequential issue, or a declined recommendation. The record is not an activity log; see [`decision-records.md`](decision-records.md) for when to write and when not to.
 
 ## Failure modes
 

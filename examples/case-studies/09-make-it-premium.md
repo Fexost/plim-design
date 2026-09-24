@@ -1,6 +1,6 @@
 # "Make this premium"
 
-**Skills:** plim-beautify · **Stress test:** Scenario E · **Outcome:** targeted improvement, plus an expression proposal for the founder
+**Skills:** plim-beautify · **Outcome:** targeted improvement, plus an expression proposal for the founder
 
 ## Context
 

@@ -1,6 +1,6 @@
 # Explicit redesign request
 
-**Skills:** plim-design, plim-review, plim-accessibility · **Outcome:** redesign (human-directed)
+**Skills:** plim-design, plim-review, plim-accessibility · **Outcome:** execute a human direction (a redesign)
 
 ## Context
 

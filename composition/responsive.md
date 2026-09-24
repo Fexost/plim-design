@@ -1,13 +1,5 @@
 # Responsive composition
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-responsive`](../skills/plim-responsive/SKILL.md).
 
-How hierarchy and grouping adapt across viewport and input modalities.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [skills/plim-responsive/SKILL.md](../skills/plim-responsive/SKILL.md)
+This file is a signpost. The reasoning lives in the skill above, and nothing here adds to it.

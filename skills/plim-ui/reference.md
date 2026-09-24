@@ -111,11 +111,11 @@ Observed on the docs site tokens page. Names are listed by role; confirm them in
 
 ## Known divergences between plim-ui guidance and Plim Design
 
-Where plim-ui's own design guidance and the Plim Design philosophy pull in different directions. The philosophy is the source of truth for design decisions; these entries track open reconciliation work in plim-ui. Neither document is edited from here.
+Where plim-ui's `DESIGN-AGENTS.md` and Plim Design pull in different directions. `DESIGN-AGENTS.md` is not a design source; Plim Design decides. These entries exist so an agent working in the plim-ui repository recognises the divergence, until plim-ui replaces that file. Neither document is edited from here.
 
 | Topic | plim-ui guidance | Plim Design | Status |
 | --- | --- | --- | --- |
 | Whitespace | `DESIGN-AGENTS.md` §3: "Start with too much white space", adding generous space and removing it until it feels right (it also allows deliberately dense layouts) | §9 Density ↔ Breathing room: density should match task, expertise, and frequency of use; more whitespace is not automatically better | **Open.** Reconciliation owned by the plim-ui maintainer |
 | Accent borders | `DESIGN-AGENTS.md` §8: accent colour bars on cards, nav, and alerts as a finishing touch | Law 2 and §11: a visual treatment should communicate a distinction | **Candidate.** Commit `3ca689f` removed accent borders from the docs nav and accessibility callout, which suggests alignment is under way. Confirm with the maintainer |
 
-Until an entry is resolved, apply the Plim Design reasoning, mention the divergence when it affects a decision, and leave both documents unchanged unless the user asks.
+Apply the Plim Design reasoning, mention the divergence when it affects a decision, and leave both documents unchanged unless the user asks. When plim-ui replaces or retires `DESIGN-AGENTS.md`, close the entries.

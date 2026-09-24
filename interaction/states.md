@@ -1,14 +1,5 @@
 # States
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Design is a system of states", the canonical state model for every Plim skill.
 
-Default, hover, focus, pressed, disabled, loading, success, error, and related presentation.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [interaction/feedback.md](feedback.md)
-- [accessibility/focus.md](../accessibility/focus.md)
+This file is a signpost. The reasoning lives in the section above, and nothing here adds to it.

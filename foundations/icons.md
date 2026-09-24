@@ -1,13 +1,5 @@
 # Icons
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Derive each foundation from its job", and the cliché table in [`plim-beautify`](../skills/plim-beautify/SKILL.md) ("Decorative icons everywhere"). Accessible names: [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "Semantics, names, and structure".
 
-Icon style, sizing, and semantic use alongside text.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [accessibility/semantics.md](../accessibility/semantics.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

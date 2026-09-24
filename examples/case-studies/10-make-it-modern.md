@@ -1,6 +1,6 @@
 # "Make this modern"
 
-**Skills:** plim-beautify, plim-responsive · **Stress test:** Scenario F · **Outcome:** structural intervention
+**Skills:** plim-beautify, plim-responsive · **Outcome:** structural intervention
 
 ## Context
 

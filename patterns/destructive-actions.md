@@ -1,13 +1,5 @@
 # Destructive actions
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Automation and agency" (the range of responses, and destructive, batch, and irreversible actions), and "Attention is a resource" (important but deliberately less prominent).
 
-Confirmations, undo, and visual weight for irreversible operations.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [interaction/affordances.md](../interaction/affordances.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

@@ -1,13 +1,5 @@
 # Whitespace
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Choosing density", and the cliché table in [`plim-beautify`](../skills/plim-beautify/SKILL.md) ("Arbitrary whitespace", "Replacing useful density with empty space"). More whitespace is not automatically better (§9 of the philosophy, Density ↔ Breathing room).
 
-Active use of empty space for clarity and focus.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [foundations/spacing.md](../foundations/spacing.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

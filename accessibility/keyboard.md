@@ -1,13 +1,5 @@
 # Keyboard
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "Keyboard and focus" and "Verification" (keyboard walk).
 
-Keyboard paths, shortcuts, and operability without pointer-only design.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [accessibility/focus.md](focus.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

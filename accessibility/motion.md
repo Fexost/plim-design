@@ -1,14 +1,5 @@
-# Motion (accessibility)
+# Motion and accessibility
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "How accessibility shapes design decisions" (Motion), "Requirements, recommendations, and human judgment", and "Verification" (reduced motion).
 
-Reduced motion, vestibular safety, and essential vs decorative animation.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [foundations/motion.md](../foundations/motion.md)
-- [interaction/motion.md](../interaction/motion.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

@@ -1,6 +1,6 @@
 # Generic SaaS dashboard
 
-**Skills:** plim-review, plim-beautify · **Stress test:** Scenario A · **Outcome:** structural intervention
+**Skills:** plim-review, plim-beautify · **Outcome:** structural intervention
 
 ## Context
 

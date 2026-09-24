@@ -1,16 +1,5 @@
-# Generic integration
+# Integrating with any stack
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Preserve before replacing" and "A documented system is the product's vocabulary": apply Plim reasoning inside whatever stack and design system the product already uses, in that system's own vocabulary. There is no Plim look to import.
 
-Default approach: apply Plim **reasoning** to whatever stack and design system the project already uses.
-
-## Principles (integration)
-
-- Preserve existing components and tokens unless the user asks to change them.
-- Improve hierarchy, composition, accessibility, and interaction clarity first.
-- Do not import Plim visual identity as a skin.
-
-## Related
-
-- [AGENTS.md](../AGENTS.md)
-- [skills/plim-design/SKILL.md](../skills/plim-design/SKILL.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

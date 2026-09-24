@@ -1,10 +1,5 @@
 # Recipe: Theme existing interface
 
-> TODO: Define after the Plim Design philosophy research phase.
+Adjusting colour, type, shape, and other token values within an existing system, rather than replacing the system. Owned by [`plim-beautify`](../skills/plim-beautify/SKILL.md), "Choosing the intervention" (rungs 5 and 6, and blast radius), and [`plim-design`](../skills/plim-design/SKILL.md), "A documented system is the product's vocabulary". Theming a shared library: [`systems.md`](../skills/plim-design/systems.md), "The theming surface". Worked example: [case 13](../examples/case-studies/13-under-expressed-brand.md).
 
-Adjust colour, type, and shape tokens within an existing system—not replace the system.
-
-## Related
-
-- [foundations/colour.md](../foundations/colour.md)
-- [foundations/typography.md](../foundations/typography.md)
+This file is a signpost. The workflow lives in the skills, and nothing here adds to it.

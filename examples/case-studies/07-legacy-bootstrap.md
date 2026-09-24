@@ -1,6 +1,6 @@
 # Legacy Bootstrap interface
 
-**Skills:** plim-review, plim-beautify · **Stress test:** Scenario C · **Outcome:** targeted improvement, staged
+**Skills:** plim-review, plim-beautify · **Outcome:** targeted improvement, staged
 
 ## Context
 

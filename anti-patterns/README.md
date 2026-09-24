@@ -24,7 +24,7 @@ If a file here seems to contradict the philosophy or a skill, the philosophy win
 | Why it matters | The consequence for people, tied to principles |
 | When it is not a problem | Legitimate uses, so the pattern isn't removed by reflex |
 | Diagnosing | Questions that separate the problem from a valid choice |
-| Repair | Directions, smallest effective change first |
+| Repair | Directions to choose from by what the treatment should mean here, not defaults; smallest effective change first |
 | Overcorrection | The opposite failure to avoid |
 
 ## Files

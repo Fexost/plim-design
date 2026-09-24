@@ -1,14 +1,5 @@
 # Spacing
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Derive each foundation from its job" and "Choosing density", and [`plim-beautify`](../skills/plim-beautify/SKILL.md), step 5 ("Improve composition").
 
-Guidance for rhythm and density through spacing—not arbitrary pixel ladders.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [composition/whitespace.md](../composition/whitespace.md)
-- [composition/visual-rhythm.md](../composition/visual-rhythm.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

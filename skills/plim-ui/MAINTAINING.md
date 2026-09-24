@@ -6,7 +6,7 @@ A lightweight process for keeping [`reference.md`](reference.md) true as plim-ui
 
 | File | Contains | Changes when |
 | --- | --- | --- |
-| [`SKILL.md`](SKILL.md) | Stable reasoning: when to use plim-ui, precedence, how Plim concepts map onto the library, the build ladder | plim-ui's architecture changes (for example, it stops styling native elements), or the philosophy changes |
+| [`SKILL.md`](SKILL.md) | Stable plim-ui-specific guidance: when to use plim-ui, precedence, how Plim concepts map onto the library, the build ladder. General reasoning for shared systems lives in [`systems.md`](../plim-design/systems.md) | plim-ui's architecture changes (for example, it stops styling native elements), or the philosophy changes |
 | [`reference.md`](reference.md) | Version-specific facts: setup, components, inputs, tokens, known divergences | Every plim-ui release that changes components, inputs, tokens, or design guidance |
 
 The direction of authority is one way: the philosophy informs plim-ui. Never change the philosophy or the skills to match an implementation detail. If plim-ui work exposes a real gap in the philosophy, raise it as a question for the philosophy.
@@ -27,7 +27,7 @@ The direction of authority is one way: the philosophy informs plim-ui. Never cha
    git diff <recorded-commit>..<target> -- projects/ui/src/public-api.ts projects/ui/src/styles/_tokens.scss AGENTS.md DESIGN-AGENTS.md
    ```
 
-   Also skim the npm README and changelog, if any, for input changes.
+   Also skim the npm README and changelog, if any, for input changes. `DESIGN-AGENTS.md` is diffed only to keep the divergence log current; it is not a design source.
 3. **Update `reference.md`:** add, change, or remove facts; mark anything seen only on `main` as **(main)**; remove **(main)** from facts now in a release.
 4. **Update known divergences:** close entries that plim-ui has reconciled, and add new ones.
 5. **Re-read `SKILL.md`** and confirm its mapping is still true at the concept level.

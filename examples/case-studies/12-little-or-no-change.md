@@ -1,6 +1,6 @@
 # Polish only: a plain tool that works
 
-**Skills:** plim-review · **Stress test:** Scenarios I and J · **Outcome:** polish only
+**Skills:** plim-review · **Outcome:** polish only
 
 ## Context
 

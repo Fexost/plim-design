@@ -1,13 +1,5 @@
 # Borders
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Semantic honesty", and the cliché table in [`plim-beautify`](../skills/plim-beautify/SKILL.md) ("Excessive borders"). Supporting depth: [`anti-patterns/visual-noise.md`](../anti-patterns/visual-noise.md).
 
-Separators, outlines, and structural edges.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [composition/grouping.md](../composition/grouping.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

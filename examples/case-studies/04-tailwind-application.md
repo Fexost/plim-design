@@ -1,6 +1,6 @@
 # Tailwind application
 
-**Skills:** plim-design, plim-beautify · **Stress test:** Scenario C · **Outcome:** targeted improvement plus polish
+**Skills:** plim-design, plim-beautify · **Outcome:** targeted improvement plus polish
 
 ## Context
 

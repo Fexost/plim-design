@@ -1,13 +1,5 @@
 # Semantics
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "Semantics, names, and structure", which applies semantic honesty from [`plim-design`](../skills/plim-design/SKILL.md) to the accessibility tree.
 
-Roles, labels, structure, and meaningful markup independent of visual style.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [skills/plim-accessibility/SKILL.md](../skills/plim-accessibility/SKILL.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

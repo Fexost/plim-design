@@ -1,13 +1,5 @@
 # Elevation
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Semantic honesty" and "Derive each foundation from its job". Supporting depth: [`anti-patterns/excessive-decoration.md`](../anti-patterns/excessive-decoration.md).
 
-Depth, layering, and shadow used with purpose—not decorative depth.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [composition/hierarchy.md](../composition/hierarchy.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

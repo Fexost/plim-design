@@ -1,10 +1,5 @@
-# Tailwind integration
+# Tailwind
 
-> TODO: Define after the Plim Design philosophy research phase.
+Plim Design needs no Tailwind-specific rules; see [`generic.md`](generic.md). In a Tailwind project, the configured theme is the system's vocabulary. Worked example: [case 04](../examples/case-studies/04-tailwind-application.md).
 
-Using Tailwind as an implementation layer without letting utility classes replace design reasoning.
-
-## Related
-
-- [integrations/generic.md](generic.md)
-- [foundations/spacing.md](../foundations/spacing.md)
+This file is a signpost and adds nothing to the sections it points to.

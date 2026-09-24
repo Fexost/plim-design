@@ -1,13 +1,5 @@
 # Touch targets
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "How accessibility shapes design decisions" (Targets and density), and [`plim-responsive`](../skills/plim-responsive/SKILL.md), "Interaction changes with input".
 
-Sizing and spacing for pointer and touch input without breaking density goals.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [foundations/density.md](../foundations/density.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

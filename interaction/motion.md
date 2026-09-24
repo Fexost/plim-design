@@ -1,14 +1,5 @@
-# Motion (interaction)
+# Interaction motion
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Transitions are part of the design", and [`plim-beautify`](../skills/plim-beautify/SKILL.md), step 10 ("Add meaningful motion"). Reduced motion: [`plim-accessibility`](../skills/plim-accessibility/SKILL.md).
 
-Motion that communicates state and spatial change—not ornament.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [foundations/motion.md](../foundations/motion.md)
-- [accessibility/motion.md](../accessibility/motion.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

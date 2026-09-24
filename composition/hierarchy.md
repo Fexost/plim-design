@@ -1,14 +1,5 @@
 # Hierarchy
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Attention is a resource". Assessed with the Hierarchy and Attention lenses in [`plim-review`](../skills/plim-review/SKILL.md). Supporting depth: [`anti-patterns/typography-inflation.md`](../anti-patterns/typography-inflation.md), [`anti-patterns/visual-noise.md`](../anti-patterns/visual-noise.md).
 
-How users perceive importance and order—type, weight, space, colour, and placement.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [foundations/typography.md](../foundations/typography.md)
-- [composition/grouping.md](grouping.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

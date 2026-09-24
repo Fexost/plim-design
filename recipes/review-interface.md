@@ -1,9 +1,5 @@
 # Recipe: Review interface
 
-> TODO: Define after the Plim Design philosophy research phase.
+A critique-only pass: findings and a recommendation, without code changes. Owned by [`plim-review`](../skills/plim-review/SKILL.md).
 
-Critique-only pass: findings and recommendations without code changes.
-
-## Related
-
-- [skills/plim-review/SKILL.md](../skills/plim-review/SKILL.md)
+This file is a signpost. The workflow lives in the skill, and nothing here adds to it.

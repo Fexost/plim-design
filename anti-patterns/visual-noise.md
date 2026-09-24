@@ -12,7 +12,7 @@ Covers excessive borders, unnecessary badges, many small competing signals, and 
 - Badges, counts, and "new" labels on many items at once.
 - Many small emphasised things (bold labels, icons, coloured text, tags) at the same visual weight.
 - Elements slightly out of alignment, or asymmetric layouts that don't lead anywhere.
-- No clear focal point: the eye wanders.
+- No order of attention, whether one focal point or several ranked ones: the eye wanders.
 
 ## Why it happens
 
@@ -40,10 +40,10 @@ Each added signal is a local fix ("make this visible", "separate this"), made wi
 
 ## Repair
 
-1. Quiet the competitors rather than amplifying the target.
-2. Replace borders with spacing or surface change where grouping is already clear.
-3. Keep badges for counts and statuses that need attention; remove the rest.
-4. Align to a shared structure; keep asymmetry only where it has a purpose.
+1. Decide the order of attention for this screen in its current state: one focal point, or several ranked ones (see [`plim-design`](../skills/plim-design/SKILL.md), "Attention is a resource"). Often the fix is to quiet the competitors; if the important thing still doesn't register, strengthen it.
+2. Where grouping is already clear, consider whether a border adds structure or only noise; spacing or a surface change may carry it.
+3. Keep badges for counts and statuses that need attention; consider inline text, a status column, or one aggregated indicator for the rest.
+4. Align to a shared structure; keep asymmetry where it leads the eye or carries the product's character.
 
 ## Overcorrection
 

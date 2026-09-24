@@ -1,13 +1,5 @@
 # Contrast
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "How accessibility shapes design decisions" (Colour) and "Requirements, recommendations, and human judgment".
 
-Legibility and perceptual contrast as design choices, not late audits.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [foundations/colour.md](../foundations/colour.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

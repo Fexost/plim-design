@@ -20,9 +20,9 @@ Plim Design separates:
 | --- | --- |
 | **[Philosophy](philosophy/philosophy.md)** | Human-readable source of truth: beliefs, principles, and reasoning |
 | **[Skills](skills/)** | Portable AI instructions that operationalise the philosophy |
-| **Foundations, composition, interaction** | Visual and behavioural building blocks derived from philosophy |
-| **[Patterns](patterns/)** | Recurring interface problems and design reasoning |
-| **[Integrations](integrations/)** | How to apply Plim with your stack without replacing it |
+| **[Anti-patterns](anti-patterns/)** | Supporting depth on generic and low-quality patterns; adds no rules |
+| **[Examples](examples/)** | Worked reasoning case studies |
+| **Foundations, composition, interaction, accessibility, patterns, integrations, recipes** | Signposts by topic. Each file names the skill section that owns the topic and adds nothing to it |
 
 You can adopt Plim Design while keeping Angular, React, Vue, Svelte, vanilla HTML/CSS, Tailwind, Bootstrap, Material, shadcn, proprietary design systems, or custom component libraries.
 
@@ -51,24 +51,25 @@ Compatibility with specific agent products is not claimed here unless verified i
 ## Repository map
 
 ```text
-philosophy/     Source of truth (beliefs, manifesto, principles)
-foundations/    Visual building blocks (colour, type, spacing, …)
-composition/    How elements work together
-interaction/    State, feedback, affordances
-accessibility/  First-class accessibility guidance
-patterns/       Recurring UI problems and reasoning
-anti-patterns/  Generic AI UI and quality traps
-recipes/        End-to-end workflows for humans and agents
-skills/         Canonical AI skills
-integrations/   Stack-specific notes (still philosophy-first)
+philosophy/     Source of truth (philosophy and manifesto)
+skills/         Canonical AI skills that operationalise the philosophy
+anti-patterns/  Supporting depth on generic AI UI and quality traps
 examples/       Worked reasoning case studies
+evals/          Behavioural test scenarios; check the skills, never define them
+foundations/    Signposts: colour, type, spacing, … → owning skill sections
+composition/    Signposts: layout, hierarchy, grouping, …
+interaction/    Signposts: states, feedback, affordances, motion
+accessibility/  Signposts to plim-accessibility
+patterns/       Signposts: tables, forms, errors, …
+recipes/        Signposts: task → skill workflow
+integrations/   Signposts: any stack, via plim-design
 adapters/       Agent portability
 ```
 
 ## Status
 
-- **Written:** the [philosophy](philosophy/philosophy.md) and [manifesto](philosophy/manifesto.md), the six [skills](skills/), [anti-patterns](anti-patterns/) as supporting depth, and twelve [case studies](examples/case-studies/).
-- **Placeholders:** foundations, composition, interaction, accessibility, patterns, integrations, and most recipes are marked with explicit TODOs. The philosophy and skills are usable without them.
+- **Written:** the [philosophy](philosophy/philosophy.md) and [manifesto](philosophy/manifesto.md), the six [skills](skills/), [anti-patterns](anti-patterns/) as supporting depth, and seventeen [case studies](examples/case-studies/).
+- **Signposts:** foundations, composition, interaction, accessibility, patterns, integrations, and recipes point to the skill sections that own each topic. They hold no guidance of their own, by design, so that every concept has one source.
 
 ## License
 

@@ -1,6 +1,6 @@
 # Human-chosen bold direction
 
-**Skills:** plim-design, plim-responsive, plim-accessibility · **Outcome:** execute the chosen direction
+**Skills:** plim-design, plim-responsive, plim-accessibility · **Outcome:** execute a human direction
 
 ## Context
 

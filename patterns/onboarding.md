@@ -1,13 +1,5 @@
 # Onboarding
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Familiarity and identity" (paying a learning cost deliberately) and "Choosing density" (occasional users), with the state model for first-run and empty states.
 
-First-run experience without patronising or decorative tours.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [patterns/empty-states.md](empty-states.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

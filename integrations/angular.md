@@ -1,10 +1,5 @@
-# Angular integration
+# Angular
 
-> TODO: Define after the Plim Design philosophy research phase.
+Plim Design needs no Angular-specific rules; see [`generic.md`](generic.md). The optional plim-ui implementation is covered by [`plim-ui`](../skills/plim-ui/SKILL.md), only when plim-ui is in scope.
 
-Applying Plim Design in Angular apps without requiring plim-ui.
-
-## Related
-
-- [integrations/generic.md](generic.md)
-- [skills/plim-ui/SKILL.md](../skills/plim-ui/SKILL.md) — only when plim-ui is explicitly in scope
+This file is a signpost and adds nothing to the sections it points to.

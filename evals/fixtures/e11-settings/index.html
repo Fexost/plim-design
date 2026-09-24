@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Workspace settings</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <main class="settings">
+    <h1>Workspace settings</h1>
+
+    <section class="panel">
+      <h2 class="panel__title">General</h2>
+      <label for="name">Workspace name</label>
+      <input id="name" value="Northwind Studio">
+      <label for="tz">Time zone</label>
+      <select id="tz"><option>Europe/London</option></select>
+      <button class="btn btn--primary">Save</button>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel__title">Members</h2>
+      <p>12 members · 3 pending invitations</p>
+      <button class="btn btn--primary">Invite people</button>
+      <button class="btn btn--secondary">Manage roles</button>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel__title">Danger zone</h2>
+      <p>Deleting the workspace removes all projects and files for every member.</p>
+      <button class="btn btn--primary" onclick="deleteWorkspace()">Delete workspace</button>
+    </section>
+  </main>
+  <script>
+    function deleteWorkspace() {
+      fetch('/api/workspace', { method: 'DELETE' }).then(() => location.assign('/goodbye'));
+    }
+  </script>
+</body>
+</html>

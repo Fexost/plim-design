@@ -1,13 +1,5 @@
 # Shape
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Derive each foundation from its job" and "Semantic honesty". Supporting depth: [`anti-patterns/excessive-rounding.md`](../anti-patterns/excessive-rounding.md).
 
-Corners, containers, and silhouette—without mandating a global border radius.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [anti-patterns/excessive-rounding.md](../anti-patterns/excessive-rounding.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

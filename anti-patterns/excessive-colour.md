@@ -40,10 +40,10 @@ Colour is the quickest way to add energy and brand presence. Accent colours spre
 
 ## Repair
 
-1. Reserve the accent for the primary action and key states; use neutrals for the rest.
-2. Give each colour one role (brand, action, success, warning, danger, information).
-3. Replace decorative gradients with solid colour roles unless the gradient has a purpose.
-4. Add text or an icon to every colour-coded status.
+1. Give each colour a role (brand, action, status, surface, data) and apply it by that role, so that the strongest signal still marks what needs attention now. For a colourful brand, this can mean more colour, used deliberately, rather than less.
+2. Where brand colour and action or status colour compete, separate them: by role, by placement, or by intensity, using the product's own palette.
+3. Keep a gradient where it is part of the brand or carries meaning; otherwise consider a solid colour role, imagery, or typography for what the gradient was trying to express.
+4. Add text or an icon to every colour-coded status (a requirement where status is conveyed; see [`plim-accessibility`](../skills/plim-accessibility/SKILL.md)).
 
 ## Overcorrection
 

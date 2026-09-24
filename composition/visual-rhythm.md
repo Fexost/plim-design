@@ -1,14 +1,5 @@
 # Visual rhythm
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`philosophy.md`](../philosophy/philosophy.md) §8.8 (Rhythm), applied in [`plim-beautify`](../skills/plim-beautify/SKILL.md), step 5 ("Improve composition") and step 12 ("Polish").
 
-Repeated spacing and alignment patterns across screens.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [foundations/spacing.md](../foundations/spacing.md)
-- [composition/layouts.md](layouts.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

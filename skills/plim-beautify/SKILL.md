@@ -43,26 +43,27 @@ Then:
 
 The order matters (§20). Do not polish a broken hierarchy. Do not animate a confusing interaction. Do not introduce a new colour system when the problem is information architecture. Do not replace components when composition would solve the problem.
 
-1. **Understand.** Product, users, primary task, brand, and the existing system inventory (see `plim-design`, "Preserve before replacing"). Note which patterns are documented system conventions and which are ad-hoc.
+1. **Understand.** Product, users, primary task, brand, and the existing system inventory (see `plim-design`, "Preserve before replacing"), including the product's decision record if it has one. Note which patterns are documented system conventions and which are ad-hoc, and which directions a human has already decided.
 2. **Audit.** Run the `plim-review` lenses. Classify findings by severity and intent. Record what works and must be preserved. This is the diagnosis; everything after it treats a specific finding.
 
 ## Decide the outcome
 
-After the audit, choose one outcome and state it, with the reason, before changing anything.
+After the audit, choose one outcome and state it, with the reason, before changing anything. The outcomes and when each is appropriate are defined in `plim-design`, "Outcomes". This skill adds what follows each:
 
-| Outcome | Appropriate when | Steps that follow |
-| --- | --- | --- |
-| **No change** | Structure, hierarchy, states, and identity serve the product; remaining findings are preferences | None. Report (see "Output") |
-| **Polish only** | The design is sound; there are rough edges against its own system or objective craft defects | Polish, verify accessibility, review |
-| **Targeted improvement** | Specific findings in specific places | Only the steps those findings need |
-| **Structural intervention** | Hierarchy, composition, or IA problems across a screen or flow | Steps 3 to 13 within that scope |
-| **Redesign** | A human has explicitly asked for one, or you can name what the existing design prevents that improvement cannot fix | Propose first unless explicitly asked; then steps 3 to 13 |
+| Outcome | Steps that follow |
+| --- | --- |
+| **No change** | None. Report (see "Output") |
+| **Polish only** | Polish, verify accessibility, review |
+| **Targeted improvement** | Only the steps those findings need |
+| **Structural intervention** | Steps 3 to 13 within that scope |
+| **Redesign** | Propose first; once agreed, steps 3 to 13 |
+| **Execute a human direction** | Steps 3 to 13, applied to how the direction is realised, not whether |
 
 Rules for the gate:
 
 - **Stopping is legitimate at any outcome.** A smaller outcome is not a lesser result.
 - **Every later intervention traces to a finding or to explicit human direction.** If you notice something new while working, add it as a classified finding before acting on it. Nothing gets changed because it was nearby.
-- **Critical findings override the outcome.** A Critical finding is always reported and either addressed or explicitly deferred by a human. "No change" or "polish only" cannot leave one silently in place; if the visual work needs no change but a Critical accessibility problem exists, the outcome is at least a targeted improvement for that finding.
+- **Critical findings and accessibility requirement failures override the outcome,** as defined in `plim-design`, "Outcomes". If the visual work needs no change but either exists, the outcome is at least a targeted improvement for that finding.
 - **Redesign is never agent-initiated by default.** If you believe it is justified, say what the current design prevents and recommend it; don't start it.
 
 ## Improve, within the chosen scope
@@ -83,7 +84,7 @@ Rules for the gate:
 
 Prefer the earliest rung that solves the problem:
 
-1. Content and copy: clearer labels, removing redundant text, reordering information.
+1. Content and copy: clearer labels, removing redundant text, reordering information (see [`language.md`](../plim-design/language.md)).
 2. Hierarchy with existing tokens: weight, colour role, size, position.
 3. Composition: grouping, spacing, alignment, containment.
 4. A different existing component or variant.
@@ -148,7 +149,7 @@ If the outcome is **no change**, say so plainly and include:
 
 - the main strengths that make the current design work
 - any findings you set aside as preference, briefly
-- any Critical finding and its status (addressed, or deferred by whom)
+- any Critical finding or accessibility requirement failure and its status (addressed, recorded as open, or deferred by whom)
 - anything small still worth doing, if the user wants it
 
 Otherwise, report as decision records (see `plim-design`, "Explain significant decisions"), grouped by the finding or human direction each change addresses. Trivial changes (a typo, one misaligned element) need a line, not a record. Also state:
@@ -158,6 +159,8 @@ Otherwise, report as decision records (see `plim-design`, "Explain significant d
 - the blast radius of any token or shared-component change
 - open questions for the user (brand direction, audience, trade-offs you resolved provisionally)
 - what you verified (contrast, keyboard, widths, states) and what you could not
+
+If the work produced a decision-worthy event (a human decision, a convention's status, an open requirement, a deferred Critical finding, a declined recommendation), add it to the product's decision record; routine changes don't belong there ([`decision-records.md`](../plim-design/decision-records.md)).
 
 ## Failure modes
 
@@ -178,7 +181,7 @@ Otherwise, report as decision records (see `plim-design`, "Explain significant d
 
 - An outcome was chosen after the audit and stated with its reason.
 - Every change traces to a finding or explicit human direction.
-- Critical findings are resolved or explicitly deferred by a human.
+- Critical findings and accessibility requirement failures are resolved, recorded as open, or explicitly deferred by a human.
 - The attention hierarchy matches the task, and the product's character comes through where it should.
 - Changes use the existing system's vocabulary; new tokens or components are justified, and wide-blast-radius changes were checked.
 - Relevant states and edges are handled at the same quality as the default state.

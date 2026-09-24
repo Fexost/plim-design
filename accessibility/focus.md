@@ -1,13 +1,5 @@
 # Focus
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "How accessibility shapes design decisions" (Focus) and "Keyboard and focus".
 
-Visible, predictable focus order and focus appearance integrated with visual design.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [interaction/states.md](../interaction/states.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

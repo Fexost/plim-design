@@ -95,6 +95,8 @@ The guidance in this skill mixes three kinds of statement. Classify before you i
 | **Above-floor improvement** | Makes the experience better beyond the requirement | AAA contrast; 44×44 touch targets; honouring reduced-motion preferences for non-essential motion; visible labels beside icons that already have accessible names; validation timing; enhanced focus appearance | Recommend it and explain the benefit. Apply by default where it doesn't conflict with a decision; a human may decline it |
 | **Preference** | Taste presented as accessibility | "Grey text feels less readable to me" when it passes; "cards are more accessible than lists" | Don't raise it as accessibility |
 
+A requirement failure is separate from its severity. However minor its consequence looks, it is addressed, recorded as open, or explicitly deferred by a human, and no outcome, including "no change" or "polish only", leaves it silently in place (see [`plim-design`](../plim-design/SKILL.md), "Outcomes").
+
 Whether a requirement applies is a question of fact: is this text, is it interactive, is the motion essential, is the image decorative? A human can supply those facts, or tell you the product's conformance target. Choosing a visual direction never changes either one.
 
 ### When an explicit human direction conflicts with a requirement
@@ -105,7 +107,7 @@ If a human has clearly chosen a visual or interaction direction, and you know it
 2. **Explain the conflict specifically:** which requirement, which part of the direction fails it, and who is excluded and how.
 3. **Propose accessible alternatives** that keep as much of the direction as possible. Offer more than one when you can; they are the human's to choose between.
 4. **Implement the chosen accessible alternative,** together with the rest of the direction unchanged. Only the failing detail is constrained.
-5. **If the human rejects every accessible alternative,** do not implement the failing part as specified. Say plainly that you can't deliver that part in a form that excludes people, implement everything else, and record the unresolved part: what it is, which requirement it fails, and the alternatives offered. The human keeps authority over their product; you don't author the exclusion or present it as acceptable.
+5. **If the human rejects every accessible alternative,** do not implement the failing part as specified. Say plainly that you can't deliver that part in a form that excludes people, implement everything else, and record the unresolved part as an Open entry in the product's decision record ([`decision-records.md`](../plim-design/decision-records.md)): what it is, which requirement it fails, and the alternatives offered. The human keeps authority over their product; you don't author the exclusion or present it as acceptable.
 
 Never resolve the conflict silently in either direction. Don't quietly weaken the requirement to match the design, and don't quietly swap in your accessible alternative in place of what the human asked for.
 

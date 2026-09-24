@@ -35,9 +35,9 @@ Rounded shapes read as friendly and contemporary, and a single radius value is t
 
 ## Repair
 
-1. Define shape roles (containers, controls, tags, media) using the existing system's radius scale.
-2. Reserve pill shapes for one role, if the system uses them at all.
-3. Make inner radii smaller than outer radii where elements nest.
+1. Define shape roles (containers, controls, tags, media) using the existing system's radius scale, or the brand's shape language.
+2. Give pill shapes a role the system defines, so that actions, inputs, and labels don't become indistinguishable. A system can assign pills to several roles if something else still tells them apart.
+3. Where elements nest, adjust inner radii so the corners read as intended.
 
 ## Overcorrection
 

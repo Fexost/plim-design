@@ -1,13 +1,5 @@
 # Grouping
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Semantic honesty", and [`plim-beautify`](../skills/plim-beautify/SKILL.md), step 5 ("Improve composition"). Supporting depth: [`anti-patterns/card-soup.md`](../anti-patterns/card-soup.md).
 
-Proximity, containment, and alignment to show relationships.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [anti-patterns/card-soup.md](../anti-patterns/card-soup.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

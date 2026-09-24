@@ -1,14 +1,5 @@
-# Motion (foundations)
+# Motion
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Derive each foundation from its job" and "Transitions are part of the design", and [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "How accessibility shapes design decisions".
 
-Motion as a visual foundation: timing, easing, and restraint at the system level.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [interaction/motion.md](../interaction/motion.md)
-- [accessibility/motion.md](../accessibility/motion.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

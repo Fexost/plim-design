@@ -35,10 +35,10 @@ Cards suit collections of genuinely independent, comparable entities that may be
 
 ## Repair
 
-1. Remove containers that don't mark a real unit; group with proximity, alignment, and headings.
-2. Replace card borders between sections with spacing or a single divider.
-3. Flatten nesting to at most one container level where it marks a unit.
-4. Keep cards for true collections, and consider a list or table if items need comparison.
+1. Keep containers that mark a real unit, or that the product's system uses by design; for the rest, group with proximity, alignment, headings, or a surface change.
+2. Between sections of one page, consider spacing or a divider where a card border only separates.
+3. Keep each level of nesting that expresses a real level of structure; remove wrappers that only accumulate.
+4. For collections, choose the form by task: cards for independent units people browse or act on, a list or table where items need comparison.
 
 ## Overcorrection
 

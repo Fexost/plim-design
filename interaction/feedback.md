@@ -1,14 +1,5 @@
 # Feedback
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "State, attention, feedback, and agency" and "Automation and agency" (act and inform). Perceivability of changes: [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "Dynamic content and states".
 
-Confirming actions, surfacing progress, and communicating outcomes.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [patterns/loading.md](../patterns/loading.md)
-- [patterns/errors.md](../patterns/errors.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

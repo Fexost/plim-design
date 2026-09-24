@@ -39,8 +39,8 @@ Large type creates drama quickly and looks confident in screenshots. It is a sin
 
 1. Size headings by their role in the page's structure, from the existing type scale.
 2. Build hierarchy with weight, colour role, spacing, and position as well as size.
-3. Quiet secondary text and labels instead of enlarging primary text.
-4. Reserve display sizes for the few moments that deserve them.
+3. Where several large things compete, consider quieting secondary text and labels before enlarging the primary one.
+4. Use display sizes where they mean something: a real focal point, or a brand whose voice is large type. How often that is depends on the product; an editorial or expressive product may use them often.
 
 ## Overcorrection
 

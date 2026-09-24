@@ -1,6 +1,6 @@
 # Highly branded application
 
-**Skills:** plim-design, plim-beautify, plim-accessibility · **Stress test:** Scenario H · **Outcome:** targeted improvement
+**Skills:** plim-design, plim-beautify, plim-accessibility · **Outcome:** targeted improvement
 
 ## Context
 

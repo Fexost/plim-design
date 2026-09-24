@@ -1,0 +1,14 @@
+:root {
+  --aurora: linear-gradient(135deg, #5b2ee6, #c2185b);
+  --color-text: #1b1b1f;
+  --color-text-on-aurora: #ffffff;
+  --color-surface: #ffffff;
+  --color-page: #f4f3f8;
+  --color-border: #d9d7e0;
+  --radius-pill: 999px;
+  --radius-panel: 12px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --font-body: "Inter", system-ui, sans-serif;
+}

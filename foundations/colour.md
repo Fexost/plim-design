@@ -1,14 +1,5 @@
 # Colour
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Derive each foundation from its job" and "Semantic honesty", and [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "How accessibility shapes design decisions". Supporting depth: [`anti-patterns/excessive-colour.md`](../anti-patterns/excessive-colour.md).
 
-Guidance for using colour with intention—not preset palettes or token tables.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [accessibility/contrast.md](../accessibility/contrast.md)
-- [anti-patterns/excessive-colour.md](../anti-patterns/excessive-colour.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

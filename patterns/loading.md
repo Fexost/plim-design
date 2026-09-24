@@ -1,13 +1,5 @@
 # Loading
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Design is a system of states" and "Automation and agency" (long-running operations), and [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "Dynamic content and states".
 
-Perceived performance, skeletons, and progress without layout thrash.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [interaction/feedback.md](../interaction/feedback.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

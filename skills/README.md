@@ -26,8 +26,8 @@ The diagram is conceptual: `plim-design` is always the base, `plim-ui` is an opt
 
 | Skill | Use for | Owns |
 | --- | --- | --- |
-| [plim-design](plim-design/SKILL.md) | Any design decision; foundation for the rest | Decision model, eight distinctions, tensions, attention, semantic honesty, the canonical state model, automation and agency, familiarity and identity, edges, system inventory, greenfield foundations and density, "no change" outcome, decision records |
-| [plim-review](plim-review/SKILL.md) | Critique without editing | Review lenses, finding classification, evidence discipline |
+| [plim-design](plim-design/SKILL.md) | Any design decision; foundation for the rest | Decision model, eight distinctions, tensions, attention, semantic honesty, the canonical state model, automation and agency, familiarity and identity, edges, system inventory, greenfield foundations and density, the outcome scale and "no change", explaining decisions; product decision records in [`decision-records.md`](plim-design/decision-records.md), shared systems and libraries in [`systems.md`](plim-design/systems.md), interface language in [`language.md`](plim-design/language.md) |
+| [plim-review](plim-review/SKILL.md) | Critique without editing | Review lenses, finding classification, evidence discipline; working with partial evidence, code-only review, scoping, and decision owners in [`evidence.md`](plim-review/evidence.md) |
 | [plim-beautify](plim-beautify/SKILL.md) | Improving existing UI | Request interpretation (premium, modern), beautification sequence, intervention ladder, cliché catalogue |
 | [plim-accessibility](plim-accessibility/SKILL.md) | Inclusive design and verification | How accessibility shapes decisions, conflict resolution, verification |
 | [plim-responsive](plim-responsive/SKILL.md) | Adaptation across contexts | Context dimensions, adaptation strategies, surface-specific reasoning |
@@ -41,7 +41,7 @@ Each concept is defined once, in the skill that owns it; other skills refer to i
 
 ## Framework independence
 
-All skills except `plim-ui` are framework-agnostic. Stack-specific notes belong in [`integrations/`](../integrations/).
+All skills except `plim-ui` are framework-agnostic. They work inside whatever stack and design system a product uses ([`plim-design`](plim-design/SKILL.md), "Preserve before replacing"); [`integrations/`](../integrations/) only signposts that.
 
 ## Installing
 

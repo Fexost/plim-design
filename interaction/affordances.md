@@ -1,13 +1,5 @@
 # Affordances
 
-> TODO: Define after the Plim Design philosophy research phase.
+Owned by [`plim-design`](../skills/plim-design/SKILL.md), "Semantic honesty" and "Familiarity and identity", and [`plim-accessibility`](../skills/plim-accessibility/SKILL.md), "Semantics, names, and structure".
 
-Making actions and controls discoverable without visual noise.
-
-## Derives from
-
-- [philosophy/philosophy.md](../philosophy/philosophy.md)
-
-## Related
-
-- [interaction/states.md](states.md)
+This file is a signpost. The reasoning lives in the sections above, and nothing here adds to it.

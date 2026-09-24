@@ -1,6 +1,6 @@
 # AI-generated card-heavy interface
 
-**Skills:** plim-review, plim-beautify · **Stress test:** Scenarios A and D · **Outcome:** structural intervention (one page)
+**Skills:** plim-review, plim-beautify · **Outcome:** structural intervention (one page)
 
 ## Context
 

@@ -8,7 +8,7 @@ Covers shadows, glassmorphism, background blobs and shapes, decorative icons, an
 
 ## Recognising it
 
-- Shadows on most surfaces, not only on things above the page.
+- Shadows on most surfaces, without a rule for what a shadow means in this product.
 - Translucent, blurred panels over busy or variable backgrounds.
 - Blobs, orbs, and abstract shapes behind content.
 - An icon beside every heading, label, and list item.
@@ -27,7 +27,7 @@ Each treatment makes a single element look richer in isolation. Added together, 
 
 ## When it is not a problem
 
-- Shadows on elements that genuinely sit above the page: menus, dialogs, popovers, sticky or dragged items.
+- Shadows that follow the product's elevation language: things that sit above the page (menus, dialogs, popovers, sticky or dragged items), or whatever else the system defines elevation to mean, such as tactility or importance.
 - Translucency where seeing what's behind matters, with contrast verified.
 - Illustration and imagery that express brand character (§8.15) or explain something.
 - Icons that aid recognition and scanning, such as in navigation or toolbars.
@@ -40,11 +40,11 @@ For each treatment: what distinction or meaning does it communicate (§11)? If r
 
 ## Repair
 
-1. Reserve elevation for the layer model: page, raised, overlay, modal.
-2. Replace glass with opaque surfaces unless the translucency serves a purpose.
-3. Remove background shapes, or replace them with brand imagery that has a role.
-4. Keep icons where they aid recognition; let text stand alone elsewhere.
-5. Tie motion to state changes; remove the rest; honour reduced motion.
+1. State what elevation means in this product (layering, separation, importance, tactility) and apply it by that meaning. Where the system has an elevation scale, use it; where it has none, define only the levels the product actually needs.
+2. Keep translucency where seeing what's behind matters, with contrast verified on the worst background; otherwise consider tinted or opaque surfaces.
+3. Keep background shapes that belong to the brand's visual language; replace arbitrary ones with brand imagery that has a role, a colour field, or nothing.
+4. Keep icons where they aid recognition or carry the product's illustrative voice; let text stand alone where the label is clear.
+5. Keep motion that explains change or carries the product's character at meaningful moments; question motion that does neither. Honour reduced motion, and give continuous motion a way to pause (a requirement for motion longer than five seconds).
 
 ## Overcorrection
 

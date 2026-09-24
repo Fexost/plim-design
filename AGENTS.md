@@ -41,4 +41,4 @@ Worked reasoning: [`examples/case-studies/`](examples/case-studies/).
 
 ## Unfinished content
 
-The philosophy, manifesto, skills, and `anti-patterns/` are written; `anti-patterns/` is supporting depth, not an additional rule source. Other supporting directories (`foundations/`, `composition/`, `interaction/`, `accessibility/`, `patterns/`, `integrations/`, most `recipes/`) still contain `> TODO` placeholders. Do not treat them as authority and do not fill them with invented “official” Plim rules; rely on the philosophy and skills, and state uncertainty where they are silent.
+The philosophy, manifesto, skills, `anti-patterns/`, and case studies are written; `anti-patterns/` is supporting depth, not an additional rule source. The topic directories (`foundations/`, `composition/`, `interaction/`, `accessibility/`, `patterns/`, `integrations/`, `recipes/`) are signposts: each file names the skill section that owns its topic. Follow the pointer; don't treat a signpost as authority, and don't fill one with new rules. Where the philosophy and skills are silent, state the uncertainty.
