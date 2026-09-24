@@ -26,7 +26,7 @@ The diagram is conceptual: `plim-design` is always the base, `plim-ui` is an opt
 
 | Skill | Use for | Owns |
 | --- | --- | --- |
-| [plim-design](plim-design/SKILL.md) | Any design decision; foundation for the rest | Decision model, eight distinctions, tensions, attention budget, semantic honesty, states, edges, system inventory, "no change" outcome, decision records |
+| [plim-design](plim-design/SKILL.md) | Any design decision; foundation for the rest | Decision model, eight distinctions, tensions, attention, semantic honesty, the canonical state model, edges, system inventory, "no change" outcome, decision records |
 | [plim-review](plim-review/SKILL.md) | Critique without editing | Review lenses, finding classification, evidence discipline |
 | [plim-beautify](plim-beautify/SKILL.md) | Improving existing UI | Request interpretation (premium, modern), beautification sequence, intervention ladder, cliché catalogue |
 | [plim-accessibility](plim-accessibility/SKILL.md) | Inclusive design and verification | How accessibility shapes decisions, conflict resolution, verification |

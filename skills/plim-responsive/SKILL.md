@@ -39,7 +39,7 @@ Adaptability (§8.9 of [`philosophy.md`](../../philosophy/philosophy.md)) means 
 3. **Find where the composition breaks.** Resize continuously and watch for the points where content stops working: lines too long, labels colliding, columns unreadable. Put breakpoints there. Don't pick them from a list of devices.
 4. **Choose an adaptation per region**, not one global rule (see strategies below).
 5. **Check continuity.** The user's mental model should survive the change (§8.14): the same things keep the same names, order, and relative priority, and state (selection, scroll position, form input) is preserved across a resize or rotation.
-6. **Check states at each context.** Empty, loading, error, long content, and dialogs at narrow widths are where responsive designs usually fail.
+6. **Check states at each context.** Apply the state model in [`plim-design`](../plim-design/SKILL.md) at each context. Empty, loading, error, long content, and dialogs at narrow widths are where responsive designs usually fail, and a layout change is itself a transition that should preserve state.
 
 ## Adaptation strategies
 

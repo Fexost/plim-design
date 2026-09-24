@@ -9,7 +9,7 @@ description: >-
 
 # Plim Review
 
-Diagnose before prescribing. This skill produces findings, not edits. It builds on [`plim-design`](../plim-design/SKILL.md); load that first for the underlying concepts (attention budget, semantic honesty, distinctions, states, edges).
+Diagnose before prescribing. This skill produces findings, not edits. It builds on [`plim-design`](../plim-design/SKILL.md); load that first for the underlying concepts (attention, semantic honesty, distinctions, the state model, edges).
 
 The most important output of a review is often not the list of problems. It is the separation of **real problems** from **preferences**, and a clear statement of **what already works and must be preserved**.
 
@@ -24,7 +24,7 @@ Do not edit code in this skill. If the user then wants changes, hand off to [`pl
 ## Procedure
 
 1. **Establish context.** What is the product, who uses it, and what is the primary task on this screen? If you cannot tell, state the assumption you are reviewing against. A review against the wrong purpose is worthless.
-2. **Read the attention hierarchy first.** Before any detail, note what gets attention first, second, third. Compare with what the task needs. This single observation explains most layout problems.
+2. **Read the attention hierarchy first.** Before any detail, note what gets attention and in what order, whether it goes to one focal point or is distributed. Compare that with what the task needs now. Where priority changes with state (an error, an alert, an empty result), read those states too. This observation explains most layout problems.
 3. **Inventory the system.** Identify the tokens, components, and conventions in use, so findings are judged against the product's own language rather than your defaults.
 4. **Walk the lenses** below. Not every lens applies to every screen; skip those that don't and say so if it matters.
 5. **Classify every finding** by severity and intent.
@@ -35,13 +35,13 @@ Do not edit code in this skill. If the user then wants changes, hand off to [`pl
 | Lens | Core question | What counts as evidence |
 | --- | --- | --- |
 | **Purpose** | Is the purpose of the page clear, and does the design serve it? | Can you state the page's job from the screen alone? |
-| **Hierarchy** | What gets attention first? Is that appropriate? | The loudest elements vs the most important ones. |
+| **Hierarchy** | What gets attention, in what order? Is that appropriate to the task now? | The loudest elements vs the most important ones; prominence that doesn't match importance. |
 | **Information architecture** | Is information grouped and ordered meaningfully? | Related things near each other, unrelated things separated; labels that match user language. |
 | **Interaction** | Are affordances clear? Is system status visible? Can people recover from mistakes? | Clickable things look clickable and vice versa; feedback after actions; undo, cancel, confirmation. |
 | **Visual system** | Do typography, spacing, colour, shape, borders, and elevation cohere? | Values drawn from a system vs one-offs; the same meaning expressed the same way. |
 | **Semantic honesty** | Do visual distinctions communicate real distinctions? | Differently styled things that are functionally identical; emphasis without importance; containers without units. |
-| **Attention** | Is emphasis allocated intentionally? | Count accent colour uses, badges, alerts, shadows, animated elements. |
-| **States** | Are important states handled? | Loading, empty, error, disabled, partial, permission, destructive confirmation. Inspect code if screens are unavailable. |
+| **Attention** | Is emphasis allocated to what matters now? | Count accent colour uses, badges, alerts, shadows, animated elements. Where attention is distributed, check it is ordered rather than equally loud; where several urgent states can coexist, check the serious one stays findable. |
+| **States** | Are the states this design meets handled, including likely combinations and transitions? | Judged against the state model in `plim-design`. Inspect code if screens are unavailable. |
 | **Accessibility** | Can it be perceived, operated, understood, and used with assistive technology? | Semantics, names, focus, keyboard path, contrast, non-colour status. Depth via [`plim-accessibility`](../plim-accessibility/SKILL.md). |
 | **Responsiveness** | Does it adapt rather than merely shrink? | What happens at narrow, intermediate, and wide widths, and with zoom. Depth via [`plim-responsive`](../plim-responsive/SKILL.md). |
 | **Identity** | Does it feel like this product rather than a generic template? Is its expression at the level the product calls for? | Brand character present and coherent; ad-hoc stock patterns (card soup, gradient hero, uniform pills) that aren't part of the product's system; or the opposite, a muted, interchangeable interface where the brand or purpose calls for character. See [`anti-patterns/`](../../anti-patterns/README.md) for how to tell a pattern from a legitimate choice. |
@@ -94,7 +94,8 @@ Avoid unanchored adjectives ("cluttered", "dated", "busy"). Translate them: "clu
 Purpose and primary task (stated or assumed), users, constraints.
 
 ## Attention hierarchy
-What reads first, second, third, and whether that matches the task.
+What reads first, second, third, or how attention is distributed, and
+whether that matches the task, including in states that shift priority.
 
 ## What works (preserve)
 Strengths any change must keep.

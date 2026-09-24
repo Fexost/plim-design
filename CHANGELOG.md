@@ -37,3 +37,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Case 12 retitled "Polish only" to match its outcome.
   - Five new cases: under-expressed brand (13), human-chosen bold direction (14), mature design system (15), explicit redesign request (16), and genuine no change (17).
   - `examples/README.md` index updated with each case's outcome.
+- Attention and state reasoning (P1.3):
+  - `plim-design`: "Attention is a budget" became "Attention is a resource", allocated by what matters right now. It covers distributed attention, priority that changes with state, concurrent urgent states, and prominence versus importance, and drops the "usually one thing" default. "Design is a system of states" is now the canonical state model, covering combinations, transitions, and the links between state, attention, feedback, and agency. Edges connect to it.
+  - `plim-review`, `plim-beautify`, `plim-responsive`, and `plim-accessibility` reference the canonical model instead of carrying their own state lists; the single-focal-point wording in review and beautify was removed.

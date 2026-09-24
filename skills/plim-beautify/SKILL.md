@@ -67,12 +67,12 @@ Rules for the gate:
 
 ## Improve, within the chosen scope
 
-3. **Identify intent.** For this screen: what must the person understand or do? What must they notice first? What should they feel about the product?
+3. **Identify intent.** For this screen: what must the person understand or do? What must they notice, and in what order: one thing first, or several things in parallel? What changes that when the state changes? What should they feel about the product?
 4. **Establish hierarchy.** Align the attention hierarchy with importance. When too much competes, quiet the competitors: demote secondary actions, mute metadata, remove redundant emphasis. When the important thing or the product's character is under-expressed, strengthen it. Diagnose the cause (typography, spacing, grouping, contrast, layout, density, state, or IA) and change the smallest effective part.
 5. **Improve composition.** Grouping, alignment, reading order, section structure, whitespace, density. Space within groups should be smaller than space between groups. Containers should wrap real units.
 6. **Refine foundations.** Typography, colour, spacing, shape, borders, elevation, icons, using the existing system's scales. Add or adjust tokens only when the system lacks a needed relationship.
 7. **Refine components.** Use the right component and variant for each job. Prefer an existing variant over a new one, and composition over a custom component.
-8. **Improve states.** Hover, focus, active, selected, disabled, loading, empty, error, success, partial. A beautiful default state with a raw error state is not beautiful.
+8. **Improve states.** Apply the state model in `plim-design`: the states this interface meets, their likely combinations, and the transitions between them. A beautiful default state with a raw error state is not beautiful.
 9. **Improve responsiveness.** Adapt the composition across contexts (`plim-responsive`).
 10. **Add meaningful motion.** Where motion explains change (what changed, where something came from or went, what needs attention, §8.14) or carries the product's character at a meaningful moment. Respect reduced-motion preferences. No motion is also a fine result.
 11. **Verify accessibility.** Contrast, focus visibility, keyboard path, semantics, non-colour status, target sizes, zoom (`plim-accessibility`). Re-check after every visual change; beautification commonly breaks contrast and focus.
@@ -136,7 +136,7 @@ This table is the working summary. To recognise a pattern with confidence, expla
 | Arbitrary whitespace | Grouping and pace | Space follows a rhythm: tighter within groups than between them | The system's spacing scale applied by relationship |
 | Replacing useful density with empty space | Calm, "premium" | The task is infrequent or calm is the intent, and nothing needed is pushed out of reach | Keep the density the task needs; improve it with alignment, rhythm, and type |
 | Under-expression: muted, generic, interchangeable | Neutrality, safety, "clean" | The product's purpose calls for quiet: focus tools, dense expert tools, a brand that is calm by intent | The brand's colour, type, imagery, shape, or motion at the moments that carry identity; stronger hierarchy where the important thing doesn't register |
-| Visual noise | Many things claim attention at once | Rarely intentional; even a busy, expressive style has a focal point | A focal point: quiet some signals, strengthen the one that matters |
+| Visual noise | Many things claim attention at once | Rarely intentional; even a busy, expressive style has an order of attention | A deliberate order of attention, whether one focal point or several ranked ones: quiet some signals, strengthen the ones that matter now |
 | "Premium" styling without improved hierarchy | "Expensive" | Luxury expression suits the brand and sits on sound hierarchy | Fix hierarchy and craft first; then decide what expression the brand needs |
 | "Modern" styling without improved usability | "Current" | A visual update serves a real goal (a brand refresh, a platform convention) alongside the usability fixes | Solve the usability issue; update the look within the system if there is a reason to |
 

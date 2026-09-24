@@ -62,6 +62,8 @@ Most accessibility is decided at design time, by choices that also affect everyo
 
 ### Dynamic content and states
 
+This applies the state model in [`plim-design`](../plim-design/SKILL.md) to how states and transitions are perceived and operated.
+
 - Loading, success, and error changes that happen without a page load must be perceivable: announce important updates through a live region or by moving focus, in proportion to their importance. Don't announce everything.
 - Loading states need a text alternative (for example, a busy state or a status message); skeletons alone are silent to screen readers.
 - Disabled controls should be genuinely unavailable. Where the reason isn't obvious, explain it; consider leaving the control enabled and explaining on activation instead.

@@ -55,7 +55,7 @@ Thirteen stages (§19). They describe the reasoning a good decision contains, no
 | Identify the tension | Which goals compete here? | Whenever two reasonable designers would disagree. |
 | Choose the simplest effective solution | What is the smallest change that solves the real problem? | Always. This is where most over-design is prevented. |
 | Establish the system | Does this decision fit the surrounding patterns and tokens? | Anything reusable or repeated. |
-| Design the states | What does it look like loading, empty, failed, disabled, and so on? | Anything with data, input, or consequences. |
+| Design the states | Which states will this meet, how do they combine, and how does it move between them? | Anything with data, input, or consequences. |
 | Verify inclusion | Is it perceivable, operable, understandable, robust? | Always. Depth via [`plim-accessibility`](../plim-accessibility/SKILL.md). |
 | Test the edges | What happens when reality stops matching the ideal example? | Anything showing real or user-generated content. |
 | Polish | Are avoidable rough edges resolved? | Only after structure is right. |
@@ -107,16 +107,39 @@ These distinctions prevent most bad AI design decisions. Each has a trap and a t
 | **Modernity vs trendiness** | Applying the current visual fashion. | Modern means responding well to contemporary users, devices, and expectations. Ask what problem the trend solves here (§16). |
 | **Polish vs decoration** | Adding effects and calling it finish. | Polish removes rough edges across visuals, behaviour, states, accessibility, and edge cases (§21). Decoration adds surface without meaning. Polish has no default direction: finishing can make an interface quieter or more expressive, depending on what the findings call for. |
 
-## Attention is a budget
+## Attention is a resource
 
-Every interface has a finite amount of attention to spend (§10). Contrast, colour, motion, large type, density, borders, shadows, prominent containers, alerts, and badges all spend it.
+Every interface has a finite amount of attention to spend (§10). Colour, contrast, size, position, whitespace, motion, elevation, imagery, typography, density, borders, alerts, and badges all spend it. The questions are **what deserves attention right now?** and **what can afford to be quiet?**
 
-To read and set the attention hierarchy:
+"Right now" matters in two ways.
 
-1. Decide what the person must notice first on this screen for its primary task. Usually one thing.
-2. Decide the few things that should come next, then everything that can be quiet.
-3. Look at where emphasis actually goes now. Squint, or list the loudest five elements.
-4. Where the two lists disagree, you have a hierarchy problem.
+**It depends on the task.** Some screens have one thing the person must find first: the pay action in a checkout, the answer in a search result. Others need attention distributed across several things:
+
+- a monitoring view, where any of several signals may need action
+- a dense table, scanned row by row and column by column
+- a settings page, read section by section
+- an editor, where the content leads and the tools stay at hand
+- a multi-step flow, where the current step leads and progress stays visible
+
+Distributed attention is still allocated. It has levels and an order of scanning, even when several things share the top level. It is not the same as everything being equally loud, which is the absence of a decision.
+
+**It changes with state.** An error, a failed sync, a new message, or a completed task changes what matters. A screen doesn't have one hierarchy; it has a hierarchy for each state that shifts priority. When several urgent things are true at once, rank them by consequence and time-sensitivity, and keep each one findable. The newest or loudest signal shouldn't bury an older, more serious one.
+
+To read and set attention:
+
+1. For this screen in its current state, decide what matters now: one thing, or a small set of similar importance, and in what order they should be found.
+2. Decide what comes next, and what can be quiet until needed.
+3. Look at where emphasis actually goes. List the loudest elements.
+4. Where the two disagree, there is a hierarchy problem.
+5. Repeat for the states that change priority, such as error, alert, empty, and success.
+
+**Prominence is not importance.** Prominence is what draws the eye; importance is what matters to the task. They should correspond (§8.6, and "Semantic honesty" below), but importance can be served by means other than loudness:
+
+- a frequent, important action may be better served by a predictable position than by strong emphasis
+- a destructive action can be important and deliberately less prominent than the safe path
+- a status indicator may matter only when it is abnormal, and can stay quiet until then
+
+Match prominence to importance in the current state. Use position, grouping, consistency, and predictability to make important things findable without making everything loud.
 
 When too many things compete, the fix is often to **quiet the competitors** rather than amplify the target: before adding weight to the primary action, remove weight from the six things fighting it. If everything is emphasised, nothing is. The opposite problem is also real: when nothing competes but the important thing still doesn't register, or the product's character never comes through, the target is under-expressed and needs more weight, colour, scale, or motion, not less.
 
@@ -156,7 +179,9 @@ When you resolve a tension, say which side dominates here, why, and what you gav
 
 ## Design is a system of states
 
-A design is not complete when the screenshot looks good. It is complete when the interface behaves coherently across meaningful states (§12).
+A design is not complete when the screenshot looks good. It is complete when the interface behaves coherently across meaningful states and the transitions between them (§12). This section is the state model for all the Plim skills; the specialist skills apply it to their concern rather than defining their own.
+
+### Kinds of state
 
 - **Interaction:** default, hover, focus, active, selected, disabled
 - **Data:** loading, empty, partial, stale, success, error, warning
@@ -164,7 +189,37 @@ A design is not complete when the screenshot looks good. It is complete when the
 - **Content:** long, short, missing
 - **Consequence:** destructive confirmation, undo, recovery
 
-Not every component needs every state; every meaningful state should be intentional. For each state that applies, decide what the person sees, what they can do, and how they get back to a working state.
+These are categories for finding the states a design will meet, not a checklist. Not every component needs every state; every meaningful state should be intentional. For each state that applies, decide what the person sees, what they can do, and how they get back to a working state.
+
+### States combine
+
+Real interfaces are in several states at once: a selected row that is also refreshing; a form with one field in error while it saves the others; offline with unsynced changes and a partial list; an unavailable action inside a failed section; two alerts of different severity.
+
+For the combinations this design is likely to meet:
+
+- decide which state leads the treatment, and which must stay perceivable alongside it
+- check that the treatments don't collide, for example selection and error both relying on the same colour or the same border
+- check that one state doesn't hide another the person needs, such as a loading overlay that hides the error it replaces
+
+Design the likely combinations, not every permutation.
+
+### Transitions are part of the design
+
+For each meaningful change between states, decide:
+
+- **What triggers it:** the person, the system, or time, and whether the person expects it.
+- **How it's communicated:** in place, through feedback near where the person is looking, by moving focus, by announcement, or by motion. Use whatever fits the product and the consequence (§8.14).
+- **What survives it:** input, scroll position, selection, and focus.
+
+Common failures: layout that jumps as content arrives; focus lost when an element disappears; a confirmation that vanishes before it can be read; an error that replaces the content the person needs to fix it.
+
+### State, attention, feedback, and agency
+
+- **Attention.** A state change can change what matters now (see "Attention is a resource"). Emphasis should follow in proportion to consequence and urgency. Routine changes stay quiet, consequential ones claim attention, and the claim ends when the state is resolved.
+- **Feedback.** Every action the person takes has a perceivable result, in proportion to its importance, so they know whether it worked (§8.13).
+- **Agency.** In each state, what can the person still do? Can they cancel a long operation, retry a failure, undo, or keep working elsewhere while something loads? A state that removes options needs a reason (§8.3).
+
+The specialist skills apply this model: [`plim-accessibility`](../plim-accessibility/SKILL.md) covers how states and transitions are perceived and operated, [`plim-responsive`](../plim-responsive/SKILL.md) how they hold up across contexts, [`plim-review`](../plim-review/SKILL.md) how to assess them, and [`plim-beautify`](../plim-beautify/SKILL.md) how to improve them.
 
 ## Design the edges
 
@@ -175,6 +230,8 @@ Ask: **what happens when reality stops matching the ideal example?** (§13)
 - **Environment:** narrow and wide screens, zoom, large text, slow networks, failed requests
 - **Access:** keyboard only, screen readers, reduced motion, partial permissions
 - **Consequence:** errors, interrupted workflows, destructive actions
+
+Edges are where many states come from: an empty dataset becomes the empty state, a failed request the error state, a long label a content state. Use these categories to find the states and combinations this design will actually meet, then design those with the state model above.
 
 You do not need to test every edge on every change. Identify the edges that could invalidate this particular design, and check those.
 
@@ -263,6 +320,8 @@ Trivial changes need no record. If you cannot fill in "why", reconsider the chan
 - Designing only the happy-path screenshot.
 - Replacing a working component, token set, or pattern because you prefer another.
 - Adding emphasis until nothing stands out.
+- Forcing a single focal point onto a task that needs distributed attention, or mistaking equal loudness for distributed attention.
+- Designing states one at a time: each fine alone, broken in combination or in transition.
 - Treating minimalism, whitespace, or consistency as goals in themselves.
 - Inventing certainty about brand, audience, or strategy.
 - Producing change to show effort when the right answer was restraint.
@@ -276,9 +335,9 @@ Trivial changes need no record. If you cannot fill in "why", reconsider the chan
 The work is done when you can answer yes, with reasons, to the Plim Standard (§24) at the depth the task warrants. In particular:
 
 - The purpose is clear and the design serves it.
-- Emphasis is spent deliberately; the attention hierarchy matches importance.
+- Emphasis is spent deliberately; attention follows what matters in each state that shifts priority.
 - Visual distinctions mean something true.
-- Meaningful states and the relevant edges are handled.
+- Meaningful states, their likely combinations and transitions, and the relevant edges are handled.
 - It remains perceivable, operable, and understandable.
 - The existing system and identity were preserved where they work.
 - Any explicit human direction was carried out faithfully, with its risks stated once.
