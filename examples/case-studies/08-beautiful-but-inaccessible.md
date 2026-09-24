@@ -28,7 +28,7 @@ Inclusion (§8.10, §22), Respect the person (Law 5), Semantic honesty (§8.11),
 
 ## Decision
 
-Inclusion wins, and the calm, light intent is preserved through different means.
+The accessibility requirements hold, and the calm, light intent is preserved through different means. Text and input contrast, visible focus, keyboard operation of the date picker, accessible names, and a way to pause the video are requirements. Visible navigation labels and pausing the video under reduced-motion preferences are above-floor recommendations; the brand owner may decline them.
 
 ## Implementation direction
 

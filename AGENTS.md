@@ -21,7 +21,7 @@ Read this before applying any skill in [`skills/`](skills/).
 2. **Improve intentionality** — purpose, hierarchy, composition, clarity, character, accessibility — without decorative churn. Restraint and expression are both legitimate; the product’s purpose and identity decide the balance.
 3. **Treat accessibility as foundational**, not a post-hoc checklist ([`skills/plim-accessibility/SKILL.md`](skills/plim-accessibility/SKILL.md)).
 4. **Question generic patterns** — card soup, arbitrary spacing, ad-hoc rounding, shadows, or colour. Ask what each communicates and require an intentional justification; don’t remove what the product’s system or identity legitimately uses.
-5. **Respect human decisions** — recommend when the direction is yours to propose; when a person has decided, raise real risks once and execute their direction well.
+5. **Respect human decisions** — recommend when the direction is yours to propose; when a person has decided, raise real risks once and execute their direction well. Human judgment operates within applicable accessibility requirements, which are a constraint, not a preference.
 6. **Prefer reasoning over presets** — do not fabricate final tokens, palettes, or scales; follow documented philosophy when available, otherwise mark gaps explicitly.
 
 ## Skill selection

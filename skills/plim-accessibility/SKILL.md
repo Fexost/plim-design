@@ -79,26 +79,56 @@ Most accessibility is decided at design time, by choices that also affect everyo
 - Zoomed desktop users experience your narrow layout. Responsive decisions are accessibility decisions; see [`plim-responsive`](../plim-responsive/SKILL.md).
 - Don't lock orientation unless it is essential.
 
+## Requirements, recommendations, and human judgment
+
+> **Accessibility is a foundational constraint, not a preference. Human judgment operates within that constraint.**
+
+People decide product intent, expression, brand direction, and interaction style (Law 8). Applicable accessibility requirements constrain **how** that intent is implemented, not **what** the intent may be. Almost every legitimate direction has an accessible form; the constraint usually changes a detail, not the direction.
+
+The guidance in this skill mixes three kinds of statement. Classify before you insist on anything.
+
+| Kind | What it is | Examples | Who decides |
+| --- | --- | --- | --- |
+| **Requirement** | A criterion that applies to this content at the product's conformance target: the target the product has stated (legal, contractual, or organisational), or WCAG 2.2 Level AA when none is stated | Text contrast 4.5:1 (3:1 for large text); 3:1 for meaningful non-text elements; visible keyboard focus; every action operable by keyboard; accessible names; status not by colour alone; a way to pause motion that runs longer than five seconds; reflow at 320 CSS px; 24×24 CSS px targets or equivalent spacing | Not negotiable by preference. Humans choose among the ways to meet it |
+| **Above-floor improvement** | Makes the experience better beyond the requirement | AAA contrast; 44×44 touch targets; honouring reduced-motion preferences for non-essential motion; visible labels beside icons that already have accessible names; validation timing; enhanced focus appearance | Recommend it and explain the benefit. Apply by default where it doesn't conflict with a decision; a human may decline it |
+| **Preference** | Taste presented as accessibility | "Grey text feels less readable to me" when it passes; "cards are more accessible than lists" | Don't raise it as accessibility |
+
+Whether a requirement applies is a question of fact: is this text, is it interactive, is the motion essential, is the image decorative? A human can supply those facts, or tell you the product's conformance target. Choosing a visual direction never changes either one.
+
+### When an explicit human direction conflicts with a requirement
+
+If a human has clearly chosen a visual or interaction direction, and you know it cannot satisfy an applicable requirement as specified:
+
+1. **Confirm it is a requirement,** not an above-floor improvement or a preference. If it isn't, the human's direction stands: note the trade-off once and implement it.
+2. **Explain the conflict specifically:** which requirement, which part of the direction fails it, and who is excluded and how.
+3. **Propose accessible alternatives** that keep as much of the direction as possible. Offer more than one when you can; they are the human's to choose between.
+4. **Implement the chosen accessible alternative,** together with the rest of the direction unchanged. Only the failing detail is constrained.
+5. **If the human rejects every accessible alternative,** do not implement the failing part as specified. Say plainly that you can't deliver that part in a form that excludes people, implement everything else, and record the unresolved part: what it is, which requirement it fails, and the alternatives offered. The human keeps authority over their product; you don't author the exclusion or present it as acceptable.
+
+Never resolve the conflict silently in either direction. Don't quietly weaken the requirement to match the design, and don't quietly swap in your accessible alternative in place of what the human asked for.
+
+This constraint is not a veto over design choices. Don't reject a direction because it is unusual, sparse, dense, expressive, or unlike your defaults. Don't turn a requirement into a prescription for one look: contrast can be met in a pale palette, visible focus in any visual language, target size in a dense layout.
+
 ## Resolving conflicts between aesthetics and accessibility
 
-When a visually attractive choice conflicts with accessibility, inclusion wins. The goal is to keep as much of the visual intent as possible.
+When a visually attractive choice fails a requirement, the requirement holds and the goal is to keep as much of the visual intent as possible. When it only misses an above-floor improvement, recommend the improvement and let the human decide.
 
 1. **Name the aesthetic intent.** What is the treatment trying to achieve: calm, lightness, focus, brand expression?
-2. **Name the access need.** Who is excluded, and how?
+2. **Name the access need.** Who is excluded, and how? Is it a requirement or an improvement?
 3. **Find a treatment that serves both.** Usually one exists.
 
 | Attractive but exclusionary | Keep the intent with |
 | --- | --- |
 | Pale grey text for a calm feel | Hierarchy through size, weight, and spacing, with text at readable contrast |
 | Removing focus rings for cleanliness | A focus indicator designed in the system's language, shown for keyboard focus |
-| Icon-only toolbar for minimalism | Accessible names and tooltips; visible labels where discoverability matters |
-| Placeholder as label for compactness | A visible, quiet label above or beside the field |
+| Icon-only toolbar for minimalism | Accessible names (required); tooltips or visible labels where discoverability matters (recommended) |
+| Placeholder as label for compactness | A persistent visible label, styled in the system's language |
 | Status shown by coloured dot only | Dot plus text label, or distinct icon shapes |
 | Text over a busy photograph | A scrim, a solid panel, or repositioned text |
 | Hover-revealed actions for tidiness | Actions visible on focus and always available on touch, or a visible overflow menu |
-| Constant ambient animation for liveliness | Motion only on meaningful change, off under reduced motion |
+| Constant ambient animation for liveliness | A way to pause or stop it (required); reduced under reduced-motion preferences (recommended) |
 
-Explain the resolution to the user: what you changed, why, and what visual quality you preserved.
+Explain the resolution to the user: what you changed, why, whether it met a requirement or an improvement, and what visual quality you preserved.
 
 ## Verification
 
@@ -121,6 +151,9 @@ Do not claim compliance you have not tested. State what you verified and what yo
 - Announcing every change, or none.
 - Building accessible defaults and inaccessible error, loading, and empty states.
 - Claiming "WCAG compliant" without testing.
+- Weakening or reinterpreting a requirement because a human prefers the result, or doing so silently.
+- Presenting an above-floor improvement or a preference as a requirement.
+- Using accessibility to reject a legitimate direction instead of finding its accessible form.
 
 ## Completion criteria
 
@@ -130,3 +163,4 @@ Do not claim compliance you have not tested. State what you verified and what yo
 - Forms explain errors and preserve input.
 - Dynamic changes are perceivable in proportion to their importance.
 - Zoom, text scaling, and reduced motion have been checked, and the checks are reported honestly.
+- Any conflict between a human direction and a requirement was explained, and resolved with an accessible alternative or recorded as open.

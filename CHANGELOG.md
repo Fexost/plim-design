@@ -29,3 +29,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `plim-review`: severity and intent are separate axes; "intentional" requires evidence the purpose is served; Polish requires a departure from the product's own system or an objective craft defect.
   - `anti-patterns/README.md`: scope limited to ad-hoc additions; overcorrection and human decisions noted.
   - `AGENTS.md` and `README.md`: "reject generic AI UI" replaced with questioning generic patterns; expression and character stated alongside restraint; human decisions respected; placeholder documents no longer cited as authority; "a philosophy, not a look" stated.
+- Accessibility and human judgment policy (first P1 item): "Accessibility is a foundational constraint, not a preference. Human judgment operates within that constraint."
+  - `plim-accessibility`: new "Requirements, recommendations, and human judgment" section distinguishing requirements (at the product's conformance target, or WCAG 2.2 AA by default), above-floor improvements, and preferences; a procedure for when an explicit human direction can't meet a requirement; conflict table and failure modes updated to match.
+  - `plim-design`, `AGENTS.md`, and case study 08 aligned with the policy and its terms.

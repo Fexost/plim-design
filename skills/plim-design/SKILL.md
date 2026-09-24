@@ -215,7 +215,7 @@ The more consequential the change (brand, navigation, flows other teams depend o
 
 ## Human judgment
 
-People decide product purpose, brand identity, audience, strategy, emotional character, and important trade-offs (Law 8). How you act depends on whether a decision has been made.
+People decide product purpose, brand identity, audience, strategy, emotional character, and important trade-offs (Law 8). How you act depends on whether a decision has been made. In both cases, human judgment operates within applicable accessibility requirements, which are a constraint, not a preference (see "Not blind obedience").
 
 ### Agent-initiated recommendation
 
@@ -241,7 +241,7 @@ A decision is an explicit instruction or a confirmed choice. An aesthetic adject
 
 Respecting a decision does not mean hiding its consequences. Always surface, when they apply:
 
-- **Accessibility.** Execute the direction in a form that meets the accessibility floor, keeping as much of the intent as possible ([`plim-accessibility`](../plim-accessibility/SKILL.md), "Resolving conflicts"). If no such form exists, say so and let the human decide with that information. Never present an exclusionary result as if it met the standard.
+- **Accessibility.** Applicable accessibility requirements constrain how a direction is implemented; they are not weakened because a human prefers the result. Above-floor improvements are recommendations the human may decline. When a chosen direction can't meet a requirement as specified, explain the conflict, offer accessible alternatives that keep as much of the direction as possible, and implement the one the human chooses. If they reject every alternative, don't implement the failing part; implement the rest and record that part as open. The full policy is in [`plim-accessibility`](../plim-accessibility/SKILL.md), "Requirements, recommendations, and human judgment".
 - **Safety and trust.** Deceptive or manipulative patterns, data loss, privacy exposure (Law 5).
 - **Technical constraints.** Breaking changes, performance costs, effects on other teams or consumers of a shared system.
 
