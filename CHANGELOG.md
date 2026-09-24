@@ -5,6 +5,16 @@ All notable changes to this repository will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) where applicable.
 
+## [1.0.1] - 2026-09-24
+
+Alignment update after plim-ui reconciled its design guidance with Plim Design. The philosophy is unchanged.
+
+### Changed
+
+- `skills/plim-ui/reference.md` rechecked against `Fexost/plim-ui` `redesign-for-v1` at `18d93f3`. The whitespace and accent-border divergences are resolved in that branch's guidance. No open divergences remain. `--plim-color-primary-text` is recorded as a branch fact, not part of `plim-ui@0.2.0`.
+- `plim-design` notes that one hue may need separate fill and text roles when one value cannot meet contrast as both. That is a contrast constraint, not a palette.
+- `plim-ui` skill: open divergences are whatever `reference.md` currently logs. It no longer says they wait until `DESIGN-AGENTS.md` is replaced.
+
 ## [1.0.0] - 2026-09-24
 
 First public release. Plim Design is a philosophy and an agent skill library, not a visual theme. Install with `npx skills add Fexost/plim-design`.

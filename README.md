@@ -2,7 +2,7 @@
 
 A **framework-agnostic design philosophy** and **AI skill library** for building intentional, polished, accessible interfaces.
 
-**Version 1.0.0**
+**Version 1.0.1**
 
 Plim Design is not a CSS framework, component library, or visual clone of any existing design language. It teaches **how to decide**, not **what pixels to copy**.
 
@@ -72,7 +72,7 @@ On systems where symlinks are unavailable, add `--copy`.
 
 ## Release
 
-Versioned releases are GitHub Releases. Commit a `CHANGELOG.md` heading for the version on `main`, then run **Release** from the Actions tab and enter the version, for example `1.0.0`. The workflow tags `vX.Y.Z` and publishes the GitHub release. Installation stays the commands above.
+Versioned releases are GitHub Releases. Commit a `CHANGELOG.md` heading for the version on `main`, then run **Release** from the Actions tab and enter the version, for example `1.0.1`. The workflow tags `vX.Y.Z` and publishes the GitHub release. Installation stays the commands above.
 
 Installed skills are the working instructions. The philosophy, case studies, and evaluations stay in this repository. Relative links to the philosophy resolve in the repository; a tagged release keeps the same file at `philosophy/philosophy.md`.
 

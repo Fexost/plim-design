@@ -6,9 +6,9 @@ Version-specific facts about plim-ui, for use with [`SKILL.md`](SKILL.md). The r
 
 | | |
 | --- | --- |
-| **Published package** | `plim-ui@0.2.0` (npm, published 2026-08-28) |
-| **Repository** | [`Fexost/plim-ui`](https://github.com/Fexost/plim-ui) `main` at [`3ca689f`](https://github.com/Fexost/plim-ui/commit/3ca689f6bd0b5779209b3cc99d262649ef449a38) (2026-08-31) |
-| **Sources checked** | npm package README; repository `README.md`, `AGENTS.md`, `DESIGN-AGENTS.md`; [tokens page](https://plim-ui.fexost.dev/foundations/tokens) of the docs site (deployed from `main`) |
+| **Published package** | `plim-ui@0.2.0` (npm, published 2026-08-28). Component and token inventory below is this package unless marked otherwise |
+| **Design guidance** | [`Fexost/plim-ui`](https://github.com/Fexost/plim-ui) branch `redesign-for-v1` at [`18d93f3`](https://github.com/Fexost/plim-ui/commit/18d93f3b2257ae15c3844d7aefda44bb26c30a29) (2026-09-24). `DESIGN-AGENTS.md`, `AGENTS.md`, `DESIGN-DECISIONS.md`, and `projects/ui/src/styles/_semantic.scss` |
+| **Earlier repository check** | `main` at [`3ca689f`](https://github.com/Fexost/plim-ui/commit/3ca689f6bd0b5779209b3cc99d262649ef449a38) (2026-08-31) |
 | **Verified on** | 2026-09-24 |
 
 Facts marked **(main)** were seen on `main` or the docs site but are not confirmed in the 0.2.0 package. If the installed version differs from the one above, check its public API and styles before relying on anything here, and tell the user about any mismatch.
@@ -96,7 +96,7 @@ Observed on the docs site tokens page. Names are listed by role; confirm them in
 | Surfaces | `--plim-color-background`, `--plim-color-surface`, `--plim-color-surface-raised` |
 | Text hierarchy | `--plim-color-text`, `--plim-color-text-muted`, `--plim-color-text-subtle` |
 | Borders | `--plim-color-border`, `--plim-color-border-strong` |
-| Action and links | `--plim-color-primary`, `-hover`, `-strong`, `--plim-color-on-primary`, `--plim-color-link` |
+| Action and links | `--plim-color-primary`, `-hover`, `-strong`, `--plim-color-on-primary`, `--plim-color-link`. On `redesign-for-v1`, also `--plim-color-primary-text`: the accent as lettering, separate from the fill. Not confirmed in `plim-ui@0.2.0` |
 | Status | `--plim-color-success`, `-warning`, `-danger`, and tinted `--plim-color-{primary,success,warning,danger}-surface`, `-surface-border`, `-surface-text` |
 | Elevation | `--plim-elevation-none`, `-raised`, `-overlay`, `-modal` (backed by `--plim-shadow-sm/md/lg`) |
 | Focus | `--plim-focus-ring-color`, `-width`, `-offset` |
@@ -111,11 +111,13 @@ Observed on the docs site tokens page. Names are listed by role; confirm them in
 
 ## Known divergences between plim-ui guidance and Plim Design
 
-Where plim-ui's `DESIGN-AGENTS.md` and Plim Design pull in different directions. `DESIGN-AGENTS.md` is not a design source; Plim Design decides. These entries exist so an agent working in the plim-ui repository recognises the divergence, until plim-ui replaces that file. Neither document is edited from here.
+`DESIGN-AGENTS.md` is not a design source. Plim Design decides. This log is only for guidance that still pulls the other way. There are no open entries as of `redesign-for-v1` at `18d93f3`.
 
-| Topic | plim-ui guidance | Plim Design | Status |
-| --- | --- | --- | --- |
-| Whitespace | `DESIGN-AGENTS.md` §3: "Start with too much white space", adding generous space and removing it until it feels right (it also allows deliberately dense layouts) | §9 Density ↔ Breathing room: density should match task, expertise, and frequency of use; more whitespace is not automatically better | **Open.** Reconciliation owned by the plim-ui maintainer |
-| Accent borders | `DESIGN-AGENTS.md` §8: accent colour bars on cards, nav, and alerts as a finishing touch | Law 2 and §11: a visual treatment should communicate a distinction | **Candidate.** Commit `3ca689f` removed accent borders from the docs nav and accessibility callout, which suggests alignment is under way. Confirm with the maintainer |
+| Topic | What it was | Status |
+| --- | --- | --- |
+| Whitespace | `DESIGN-AGENTS.md` told agents to start with too much white space | **Resolved** on `redesign-for-v1`. Density follows the task. Adding space is not, by itself, an improvement. Not in `plim-ui@0.2.0` |
+| Accent borders | `DESIGN-AGENTS.md` recommended accent colour bars on cards, navigation, and alerts as a finishing touch | **Resolved** as guidance on `redesign-for-v1`. The finishing-touch instruction is gone. Edges that remain have a stated job: the current navigation item, a callout, and the docs folio rule. The folio rule is a documentation decision, not a component default |
 
-Apply the Plim Design reasoning, mention the divergence when it affects a decision, and leave both documents unchanged unless the user asks. When plim-ui replaces or retires `DESIGN-AGENTS.md`, close the entries.
+plim-ui's default theme (dark, cool, violet, modest radius) is that library's identity. It is not a Plim Design look. Products re-theme semantic roles.
+
+One hue can need two roles when one value cannot do both jobs. On `redesign-for-v1`, `--plim-color-primary` is the action fill and `--plim-color-primary-text` is that accent as lettering, because the fill that holds white text failed as text on a dark surface. That split is a contrast constraint. It is not a requirement to use two violets, or any particular hue.

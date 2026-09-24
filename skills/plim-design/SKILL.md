@@ -11,7 +11,7 @@ license: MIT
 
 # Plim Design
 
-This skill turns [`philosophy/philosophy.md`](../../philosophy/philosophy.md) into working judgment. The philosophy is canonical: if this skill and the philosophy disagree, follow the philosophy and fix the skill. Section references such as (§10) point into that file. When this skill is installed without the repository, the same file is at <https://github.com/Fexost/plim-design/blob/v1.0.0/philosophy/philosophy.md>.
+This skill turns [`philosophy/philosophy.md`](../../philosophy/philosophy.md) into working judgment. The philosophy is canonical: if this skill and the philosophy disagree, follow the philosophy and fix the skill. Section references such as (§10) point into that file. When this skill is installed without the repository, the same file is at <https://github.com/Fexost/plim-design/blob/v1.0.1/philosophy/philosophy.md>.
 
 The goal is not prettier output. The goal is better decisions: every significant visual or behavioural choice should have a reason you can state (§2).
 
@@ -128,6 +128,8 @@ Partial vocabularies still count. A framework's components carry behaviour and a
 | Icons, imagery, illustration | What needs recognising, and what voice does imagery carry? | Content, audience, brand |
 
 Each foundation can land anywhere in its range: one typeface or several, two colours or many roles, sharp or soft shapes, no elevation or several layers, still or lively motion. The evidence decides.
+
+The same hue can need more than one colour role when one value cannot do both jobs, such as a fill that holds contrasting text and that hue used as lettering. The split comes from contrast. It does not prescribe a palette.
 
 Record the result as a short rationale: for each foundation, the choice and the reason. It is what later decisions are tested against, and it replaces "that's how it looked" as the justification. Keep it in the product's decision record as a Foundation entry ([`decision-records.md`](decision-records.md)).
 

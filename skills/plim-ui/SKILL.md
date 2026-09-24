@@ -43,7 +43,7 @@ Component names, inputs, and tokens are in [`reference.md`](reference.md), which
 | Architecture and code conventions inside plim-ui | plim-ui's `AGENTS.md` |
 | plim-ui's own look (its default theme and character) | Decided by plim-ui's maintainer, derived with Plim reasoning ([`systems.md`](../plim-design/systems.md)), and recorded in plim-ui's own decision record |
 
-plim-ui's `DESIGN-AGENTS.md` is not a design source. Where it and Plim Design diverge, follow Plim Design and say so when it affects a decision. The known divergences are logged in `reference.md` until plim-ui replaces that file. Don't edit the philosophy to make a divergence disappear.
+plim-ui's `DESIGN-AGENTS.md` is not a design source. Where it and Plim Design diverge, follow Plim Design and say so when it affects a decision. Open divergences are logged in `reference.md`. Don't edit the philosophy to make a divergence disappear.
 
 ## Mapping Plim concepts to plim-ui
 

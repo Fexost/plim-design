@@ -53,4 +53,4 @@ npx skills add Fexost/plim-design
 
 Global install: `npx skills add Fexost/plim-design -g`. One skill: `npx skills add Fexost/plim-design --skill plim-design`. If you install any specialist skill, also install `plim-design`. See the [repository README](../README.md).
 
-The CLI copies each `skills/<name>/` directory. Links between those directories work when the skills are installed together. Links to `philosophy/` resolve in this repository; the canonical file is also at <https://github.com/Fexost/plim-design/blob/v1.0.0/philosophy/philosophy.md>.
+The CLI copies each `skills/<name>/` directory. Links between those directories work when the skills are installed together. Links to `philosophy/` resolve in this repository; the canonical file is also at <https://github.com/Fexost/plim-design/blob/v1.0.1/philosophy/philosophy.md>.
