@@ -15,7 +15,7 @@ The goal is not prettier output. The goal is better decisions: every significant
 
 ## When to use
 
-- Designing a new screen, flow, or component.
+- Designing a new screen, flow, or component, or a new product with no established system (see "When there is no system to preserve").
 - Deciding whether an existing interface should change at all, and if so, how much.
 - Answering design questions ("should this be a modal?", "is this too dense?").
 - As the foundation for the other skills:
@@ -91,6 +91,99 @@ Separate two things that can look alike:
 | What to judge | Whether it is **used as the system intends** here, and whether the system serves this product's purpose and users | Whether it communicates anything at all |
 
 The anti-pattern guidance ([`anti-patterns/`](../../anti-patterns/README.md) and the cliché table in [`plim-beautify`](../plim-beautify/SKILL.md)) is mostly useful for the second column. A system convention that resembles a listed pattern is not a finding by resemblance alone. Misuse of a convention is a finding: using the system's entity card to wrap a single field, or its highest elevation for inline content. A convention that genuinely harms the product (fails contrast, cannot express a needed state) is a finding about the system, and changing it is a system-level decision for a human (see "Human judgment").
+
+## When there is no system to preserve
+
+Greenfield work (a new product, or one whose only "system" is a framework's default theme) still starts from reasoning, not from a look. Plim has no visual defaults to reach for (§15). The foundations come from the product, and the result can legitimately be restrained or expressive, dense or spacious, conventional or unusual, quietly branded or highly branded.
+
+### Start from evidence
+
+Gather, or ask for, what the foundations will be derived from:
+
+- **Purpose:** what the product is for and what a good outcome looks like (§8.1).
+- **Audience:** expertise, frequency of use, environment (devices, interruptions, distance from the screen), and accessibility needs.
+- **Content:** what kind (figures, prose, media, forms, conversation), how much, and how variable.
+- **Task demands:** scanning, comparing, reading, entering, monitoring, creating, deciding.
+- **Brand:** existing assets (logo, colours, typefaces, voice), or the emotional character the product should have if there are none.
+- **Platform and constraints:** target platforms and their conventions, the implementation framework, the accessibility conformance target.
+
+Brand and emotional character are human decisions (Law 8). If they are unknown, ask, or propose two or three directions with reasons. Don't fill the gap with a neutral default and call it a decision: neutral is a character too.
+
+Partial vocabularies still count. A framework's components carry behaviour and accessibility worth keeping, but their default theme is an implementation starting point, not the product's identity; whether to keep that look is a decision about identity. Brand guidelines without UI guidance are preserved and translated into the interface.
+
+### Derive each foundation from its job
+
+| Foundation | The question it answers | Driven by |
+| --- | --- | --- |
+| Typography | What voice, and what kind of reading? | Content type and length, reading versus scanning, brand voice, languages and scripts, figures |
+| Spacing and rhythm | How closely are things related, and what is the pace? | The density decision, grouping, input method |
+| Colour | Which roles must colour play: brand, action, status, surface, data? | Brand, how many status levels exist, data visualisation, themes, contrast requirements |
+| Shape | What distinguishes kinds of things, and what character does form carry? | Brand character, the kinds of components, platform conventions |
+| Elevation and surfaces | What layering does the product actually have? | Overlays, panels, independent units, and how the product chooses to express separation |
+| Motion | Which changes need explaining, and what character should movement have? | State transitions, brand character, reduced-motion needs |
+| Icons, imagery, illustration | What needs recognising, and what voice does imagery carry? | Content, audience, brand |
+
+Each foundation can land anywhere in its range: one typeface or several, two colours or many roles, sharp or soft shapes, no elevation or several layers, still or lively motion. The evidence decides.
+
+Record the result as a short rationale: for each foundation, the choice and the reason. It is what later decisions are tested against, and it replaces "that's how it looked" as the justification.
+
+### Choosing density
+
+Density is decided per context within the product, not set once for the product, and Plim has no preferred density. Weigh:
+
+- **Frequency and expertise.** Daily experts often gain from seeing more at once; occasional users often gain from more guidance and space.
+- **Task.** Comparing and monitoring favour seeing more together; reading, deciding, and high-stakes single actions may favour focus.
+- **Content.** Tables, prose, media, and forms each have their own natural densities.
+- **Input and environment.** Touch, gloves, movement, and viewing distance affect target size and spacing. The target-size requirement holds at any density ([`plim-accessibility`](../plim-accessibility/SKILL.md)).
+- **Character.** Density contributes to how a product feels: calm, urgent, generous, efficient.
+- **Cost.** For this task, is scrolling or crowding the more expensive failure?
+
+One product can combine densities, such as a dense operations table and a spacious onboarding. Where users genuinely differ, a density setting can serve both, though it is a cost to build and maintain, not a free answer.
+
+Check the choice against evidence once real content and use exist. Too sparse shows up as people scrolling or paging to compare things they need together; too dense shows up as missed items and misread rows.
+
+### How much structure
+
+Match the amount of system to what the product needs now and can reasonably foresee.
+
+- **More structure** when there are many screens, teams, or contributors (including AI agents), repeated patterns, several platforms or themes, or a long expected life. Without structure, consistency drifts.
+- **Less structure** when the product is single-purpose, short-lived (a campaign, an exhibition), still finding its shape, or editorial, with each page composed individually.
+
+Structure also shows. A highly systematic product and a composed, editorial one look different, and either can be right.
+
+### Convention or context
+
+Make a decision a reusable convention (a token, component, variant, or pattern) when:
+
+- it has recurred, or clearly will, with the same meaning
+- it expresses something that should read the same across the product, such as action hierarchy, status, or the spacing between related items
+- inconsistency would mislead people or let the product drift
+
+Keep it contextual when:
+
+- it belongs to one moment: a launch page, a celebration, a one-off visualisation
+- its meaning isn't settled yet
+- generalising it would force unrelated things to look alike (Law 4)
+
+### Avoid premature proliferation
+
+- Build the scales and roles that the current decisions need, not a complete library in advance. Unused tokens and variants still have to be maintained and understood.
+- Prefer names that say what a token means over what its value is, so it can change without being renamed.
+- Add a variant only for a distinct meaning; a variant that differs only in taste is noise.
+- Create a component when a composition recurs with the same behaviour and states, not for every fragment of a screen.
+- Treat early foundations as hypotheses and revise them when real content arrives (Law 6).
+- Too little structure is also a failure: without shared values, one-offs accumulate (see [case 04](../../examples/case-studies/04-tailwind-application.md)).
+
+### Resolve the tensions explicitly
+
+With no existing vocabulary to lean on, every tension in "Resolve tensions, don't maximise principles" below has to be resolved on purpose. Decide where familiarity should dominate (forms, navigation, platform patterns; §8.4) and where identity should emerge, and write down which side leads for each tension and why. A dense, conventional trading terminal; a spacious, expressive meditation app; an unusual, highly branded exhibition site; a restrained internal admin tool: each is a legitimate result of this reasoning.
+
+### Greenfield failure modes
+
+- Starting from the neutral, rounded, spacious, card-based layout that feels familiar to you. That is a look, not a decision.
+- Adopting a framework's default theme as the product's identity without asking.
+- Producing foundations that would look the same for a bank, a festival, and a hospital. If the evidence differs and the result doesn't, the result came from habit.
+- Building a full token and component library before the first real screens exist.
 
 ## Design intelligence: eight distinctions
 
