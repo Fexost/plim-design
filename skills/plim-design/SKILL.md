@@ -176,7 +176,7 @@ Keep it contextual when:
 
 ### Resolve the tensions explicitly
 
-With no existing vocabulary to lean on, every tension in "Resolve tensions, don't maximise principles" below has to be resolved on purpose. Decide where familiarity should dominate (forms, navigation, platform patterns; §8.4) and where identity should emerge, and write down which side leads for each tension and why. A dense, conventional trading terminal; a spacious, expressive meditation app; an unusual, highly branded exhibition site; a restrained internal admin tool: each is a legitimate result of this reasoning.
+With no existing vocabulary to lean on, every tension in "Resolve tensions, don't maximise principles" below has to be resolved on purpose. Decide where familiarity should dominate (often forms, navigation, and platform patterns, where learned expectations are strongest; §8.4) and where identity should emerge (see "Familiarity and identity"), and write down which side leads for each tension and why. A dense, conventional trading terminal; a spacious, expressive meditation app; an unusual, highly branded exhibition site; a restrained internal admin tool: each is a legitimate result of this reasoning.
 
 ### Greenfield failure modes
 
@@ -192,7 +192,7 @@ These distinctions prevent most bad AI design decisions. Each has a trap and a t
 | Distinction | Trap | Test |
 | --- | --- | --- |
 | **Change vs improvement** | Treating a visible difference as progress. | Name what got better for the person or the product. Functional gains count: comprehension, speed, confidence, access, recovery. So do experiential ones: trust, brand fit, character, delight, appropriate expression, when there is evidence the product needs them (brand guidelines, audience, product purpose, stated intent). If you can only name "looks fresher", it is change. |
-| **Novelty vs value** | Choosing an unusual pattern because it is interesting. | Does the novelty solve something the familiar pattern could not? If not, familiarity wins (§8.4). |
+| **Novelty vs value** | Choosing an unusual pattern because it is interesting, or a familiar one because it is standard. | Name what the new pattern does better, for the task or for an identity the product needs, and what it costs people to learn. If you can only name "more interesting", it is novelty. If the familiar pattern doesn't fit the task, "it's standard" is not a reason either (§8.4). See "Familiarity and identity". |
 | **Visual preference vs design problem** | Reporting taste as a defect, or dismissing a real identity gap as taste. | A problem has an observable consequence: someone misreads, misses, cannot act, errs, cannot recover, or is excluded. A gap between the interface and its evidenced identity or emotional intent is also a problem: the brand is warm and the product reads clinical; a payment flow feels provisional to people who need to trust it; a celebratory moment passes without character. A preference is "I would do it differently" with neither kind of evidence. |
 | **Decoration vs communication** | Adding treatments because they look nicer. | Ask what distinction it communicates (§11). If nothing, it is decoration: question it. Decoration is not forbidden, but it must not masquerade as information. |
 | **Consistency vs uniformity** | Making everything identical. | Consistent means similar things behave and communicate similarly. If two different things now look the same, you have created uniformity and lost information. |
@@ -261,7 +261,7 @@ Principles are forces to balance (§4, §9). More whitespace, consistency, expre
 | Tension | Too far one way | Too far the other | Resolving question |
 | --- | --- | --- | --- |
 | Simplicity ↔ Capability | Clean but cannot support real work | Everything exposed at once | What complexity does this user and task need? |
-| Familiarity ↔ Identity | Generic | Hard to understand | Where should convention dominate, and where should identity emerge? |
+| Familiarity ↔ Identity | Generic | Hard to understand | Where should convention dominate, and where should identity emerge? See "Familiarity and identity". |
 | Consistency ↔ Context | Same treatment where it shouldn't be | Nothing predictable | Which relationships stay stable, and which adapt? |
 | Restraint ↔ Expression | No character | Competes with its purpose | What level of expression serves this product and its users? |
 | Density ↔ Breathing room | Inefficient, scrolling everywhere | Overwhelming | What density fits the task, expertise, and frequency of use? |
@@ -361,6 +361,37 @@ Consequence and reversibility do most of the work. When an action can be made re
 After the automation acts, does the person understand what happened, and could they have changed it if they wanted to? If yes, it reduced their work. If they are surprised, can't find what changed, or can't opt out, it removed control. Automation also removes control when it takes over a judgement that belongs to the person, such as what to say, whom to include, or what to spend.
 
 The same reasoning governs your own conduct as an agent: see "Human judgment".
+
+## Familiarity and identity
+
+Familiar patterns save people learning. Distinctive ones carry identity, and sometimes serve the task better. Neither wins by default (§8.4, §8.15, and in §9 both Familiarity ↔ Identity and Innovation ↔ Familiarity). The question is what each costs and gains here.
+
+### Recognisable behaviour, distinctive character
+
+People depend most on behaviour and structure: what is interactive, where navigation lives, how a form submits, what a link does compared with a button, how selection, scrolling, and dismissal work. Visual and verbal character (colour, typography, shape, imagery, motion, composition, voice) can vary widely while those stay recognisable. A control can look nothing like a platform default and still read and behave as the control it is (semantic honesty). So most brand expression doesn't need to break convention.
+
+Deviating in behaviour usually costs more than deviating in appearance. Appearance breaks recognition too, when the cue people rely on is visual: a link that no longer looks followable, or a control with no sign that it is interactive.
+
+### What decides it
+
+- **Task and consequence.** Where mistakes are costly or time is short (payments, clinical work, destructive actions, long forms), learning costs and errors weigh more, and unfamiliar behaviour needs a stronger reason. Where exploration is the point (an exhibition, a game, a creative canvas, a brand moment), unfamiliarity can be part of the value.
+- **Audience and frequency.** Occasional and broad audiences rely on what they already know. Daily experts can learn a better pattern once and gain from it every day.
+- **Existing expectations.** Platform conventions, domain conventions (spreadsheets, code editors, trading tools), and the product's own established patterns all set expectations. Changing the product's own patterns costs its existing users (Law 7).
+- **Product identity.** How central distinctiveness is to the product's value: essential for a festival app or an editorial brand, secondary for a utility people want to finish with.
+- **Evidence.** Testing, analytics, support requests, research. An untested deviation is a hypothesis, and so is an untested assumption that the convention works.
+
+### Four situations
+
+- **Keep the convention** when it fits the task and people depend on it. Express identity through appearance, voice, and composition instead.
+- **Deviate for identity** when distinctiveness is part of the product's value and the deviation is learnable. It should be obvious on first use, consistent everywhere it appears, and low in consequence if misunderstood. Pay the learning cost deliberately: teach it where it first appears, and keep critical paths recognisable where a misunderstanding would be costly. Accessibility requirements hold either way.
+- **Remove unnecessary learning cost** when a deviation serves neither the task nor an identity the product needs: a reinvented scrollbar or date picker, a gesture nobody would guess, a standard action renamed. Signals include hesitation, mis-taps, support questions, and instructions for things people already know how to do elsewhere.
+- **Replace a familiar pattern that doesn't fit.** A convention is valuable only where it reduces effort (§8.4). Pagination for a task that needs continuous comparison, a step-by-step wizard for experts who need everything at once, or a form for what is really a conversation each has its own cost. "It's standard" doesn't justify it.
+
+### Innovation or novelty
+
+Innovation does something better: faster, fewer errors, a capability the familiar pattern can't offer, or a signature interaction that carries the product's identity when its purpose calls for one. Novelty is different without doing anything better.
+
+To tell them apart, name what the new pattern does better, for whom, and what it costs them to learn. Then check that claim against evidence once it exists. If a human has explicitly chosen a distinctive direction, raise its learning cost once and execute it well (see "Human judgment").
 
 ## Design the edges
 
@@ -463,6 +494,7 @@ Trivial changes need no record. If you cannot fill in "why", reconsider the chan
 - Adding emphasis until nothing stands out.
 - Forcing a single focal point onto a task that needs distributed attention, or mistaking equal loudness for distributed attention.
 - Designing states one at a time: each fine alone, broken in combination or in transition.
+- Defending a convention because it's standard when it doesn't fit the task, or breaking one for character when appearance alone could have carried it.
 - Automating because it's possible, or asking because it feels safe: confirming everything until confirmations mean nothing, or acting silently on guesses the person discovers later.
 - Treating minimalism, whitespace, or consistency as goals in themselves.
 - Inventing certainty about brand, audience, or strategy.

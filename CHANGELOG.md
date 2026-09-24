@@ -46,3 +46,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automation and agency (P1.5):
   - `plim-design`: new section "Automation and agency". Consequence, reversibility, confidence, expressed intent, and frequency decide between act, act and inform, suggest, preview, ask, and confirm. It covers when interruption is justified, applies the model to destructive, background, default, AI-generated, batch, irreversible, recurring, and long-running actions, and gives a test for reduced work versus removed control. The tension row and failure modes link to it.
   - `plim-review`: the Interaction lens judges automation against consequence and reversibility.
+- Familiarity and identity (P1.6):
+  - `plim-design`: new section "Familiarity and identity", covering recognisable behaviour with distinctive character, the factors that decide the trade-off (task and consequence, audience and frequency, existing expectations, product identity, evidence), four situations, and innovation versus novelty. The "Novelty vs value" test no longer makes familiarity the default winner; the greenfield guidance and tension rows link to the new section; one failure mode added.
+  - `plim-review`: the Identity lens asks whether unconventional behaviour earns its learning cost.
