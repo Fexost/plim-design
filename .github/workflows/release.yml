@@ -1,0 +1,109 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Semver version to tag and release (for example 1.0.0)
+        required: true
+        type: string
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Tag and release
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Validate version
+        run: |
+          version='${{ inputs.version }}'
+          if ! printf '%s' "$version" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?(\+[0-9A-Za-z.-]+)?$'; then
+            echo "Version must be a valid semver (for example 1.0.0)."
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Confirm the changelog and that the tag is new
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          if git ls-remote --tags origin "refs/tags/v${VERSION}" | grep -q .; then
+            echo "Remote tag v${VERSION} already exists."
+            exit 1
+          fi
+          match=0
+          while IFS= read -r line; do
+            case "$line" in
+              "## [${VERSION}]"|"## [${VERSION}] - "*) match=1 ;;
+            esac
+          done < CHANGELOG.md
+          if [ "$match" -ne 1 ]; then
+            echo "CHANGELOG.md has no heading for ${VERSION}. Commit that on main first."
+            exit 1
+          fi
+
+      - name: Confirm the skills CLI can see this commit
+        run: npx --yes skills add . --list
+
+      - name: Confirm the skills CLI can see the public repository
+        run: npx --yes skills add Fexost/plim-design --list
+
+      - name: Install the core skill into a temporary directory
+        run: |
+          tmp="$(mktemp -d)"
+          (
+            cd "$tmp"
+            npx --yes skills add Fexost/plim-design --skill plim-design --agent codex --copy --yes
+          )
+          found="$(find "$tmp" -path '*/plim-design/SKILL.md' -print -quit)"
+          if [ -z "$found" ]; then
+            echo "plim-design was not installed under the temporary directory."
+            find "$tmp" -type f | head
+            exit 1
+          fi
+          echo "Installed at ${found}"
+
+      - name: Create release tag
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "v${VERSION}" -m "Release v${VERSION}"
+          git push origin "v${VERSION}"
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          notes="$(mktemp)"
+          {
+            echo "Install:"
+            echo
+            echo '```bash'
+            echo "npx skills add Fexost/plim-design"
+            echo "npx skills add Fexost/plim-design --skill plim-design"
+            echo '```'
+            echo
+            awk -v ver="$VERSION" '
+              index($0, "## [" ver "]") == 1 { found=1 }
+              found && index($0, "## [") == 1 && index($0, "## [" ver "]") != 1 { exit }
+              found { print }
+            ' CHANGELOG.md
+          } > "$notes"
+          gh release create "v${VERSION}" \
+            --target main \
+            --title "v${VERSION}" \
+            --notes-file "$notes"

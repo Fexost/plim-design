@@ -6,6 +6,7 @@ description: >-
   when designing or improving accessibility, auditing semantics, keyboard,
   focus, contrast, forms, dynamic content, motion, zoom, or touch targets, or
   when a visual choice conflicts with accessibility.
+license: MIT
 ---
 
 # Plim Accessibility

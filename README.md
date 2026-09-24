@@ -2,6 +2,8 @@
 
 A **framework-agnostic design philosophy** and **AI skill library** for building intentional, polished, accessible interfaces.
 
+**Version 1.0.0**
+
 Plim Design is not a CSS framework, component library, or visual clone of any existing design language. It teaches **how to decide**, not **what pixels to copy**.
 
 ## Core positioning
@@ -34,16 +36,52 @@ Plim Design improves **design decisions** in your application. There is no Plim 
 
 [**plim-ui**](https://github.com/Fexost/plim-ui) is a separate Angular component library that will serve as the **reference implementation and showcase** of this philosophy.
 
-Plim Design stands on its own. Plim UI is optional—use it when you want an Angular-native expression of the ideas, not as a prerequisite.
+Plim Design stands on its own. Plim UI is optional—use it when you want an Angular-native expression of the ideas, not as a prerequisite. It is not how Plim Design is installed or released.
 
 **Plim Design has a philosophy, not a look. Plim UI has a look, but that look is an implementation of the philosophy, not the definition of it.**
+
+## Install
+
+The skills install with the [Agent Skills CLI](https://github.com/vercel-labs/skills). The GitHub repository is the source.
+
+```bash
+npx skills add Fexost/plim-design
+```
+
+That installs the six skills into the current project. For every project on the machine:
+
+```bash
+npx skills add Fexost/plim-design -g
+```
+
+The core skill on its own:
+
+```bash
+npx skills add Fexost/plim-design --skill plim-design
+```
+
+The other skills build on `plim-design`, so install it alongside any specialist skill.
+
+List what the repository provides without installing:
+
+```bash
+npx skills add Fexost/plim-design --list
+```
+
+On systems where symlinks are unavailable, add `--copy`.
+
+## Release
+
+Versioned releases are GitHub Releases. Commit a `CHANGELOG.md` heading for the version on `main`, then run **Release** from the Actions tab and enter the version, for example `1.0.0`. The workflow tags `vX.Y.Z` and publishes the GitHub release. Installation stays the commands above.
+
+Installed skills are the working instructions. The philosophy, case studies, and evaluations stay in this repository. Relative links to the philosophy resolve in the repository; a tagged release keeps the same file at `philosophy/philosophy.md`.
 
 ## AI-first
 
 This repository is structured for **human readers** and **coding agents**:
 
 - Root **[AGENTS.md](AGENTS.md)** orients agents without duplicating the whole corpus.
-- **[skills/](skills/)** holds canonical skill definitions (copy or symlink into your agent’s skill path as needed).
+- **[skills/](skills/)** holds the installable skills (`skills/<name>/SKILL.md`).
 - **[adapters/](adapters/)** documents how skills map to different agent environments.
 
 Compatibility with specific agent products is not claimed here unless verified in [adapters/](adapters/).

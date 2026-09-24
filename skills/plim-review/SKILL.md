@@ -5,6 +5,7 @@ description: >-
   reviews, UI audits, "what's wrong with this?", "should this change?", checking
   hierarchy, semantic honesty, states, accessibility, responsiveness, identity,
   or generic AI-generated patterns. Also provides the audit step for plim-beautify.
+license: MIT
 ---
 
 # Plim Review

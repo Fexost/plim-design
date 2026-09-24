@@ -5,6 +5,7 @@ description: >-
   preserving its stack, design system, and identity. Use for requests like
   "make it beautiful", "make it premium", "make it modern", "polish this",
   "clean this up", or "make it look professional". Diagnoses before decorating.
+license: MIT
 ---
 
 # Plim Beautify

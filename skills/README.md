@@ -45,6 +45,12 @@ All skills except `plim-ui` are framework-agnostic. They work inside whatever st
 
 ## Installing
 
-Skills link to each other and to the philosophy with relative paths. Keep the `skills/` directory together, and keep `philosophy/`, `anti-patterns/`, and `examples/` alongside it when you can; see [`adapters/`](../adapters/). If you install a single skill, also install `plim-design`.
+Install from GitHub with the Agent Skills CLI.
 
-> TODO: Publish Plim Design as a single installable package that provides all skills and their supporting material.
+```bash
+npx skills add Fexost/plim-design
+```
+
+Global install: `npx skills add Fexost/plim-design -g`. One skill: `npx skills add Fexost/plim-design --skill plim-design`. If you install any specialist skill, also install `plim-design`. See the [repository README](../README.md).
+
+The CLI copies each `skills/<name>/` directory. Links between those directories work when the skills are installed together. Links to `philosophy/` resolve in this repository; the canonical file is also at <https://github.com/Fexost/plim-design/blob/v1.0.0/philosophy/philosophy.md>.

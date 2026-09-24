@@ -6,6 +6,7 @@ description: >-
   or density across viewport widths, input methods, zoom, and content length,
   or when reviewing how an interface behaves on small, intermediate, or large
   screens.
+license: MIT
 ---
 
 # Plim Responsive

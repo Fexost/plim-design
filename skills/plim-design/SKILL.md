@@ -6,11 +6,12 @@ description: >-
   change, judging a design question, preserving an existing design system or
   brand, designing a shared design system or component library, or handling
   states and edge cases. Load before the other plim-* skills.
+license: MIT
 ---
 
 # Plim Design
 
-This skill turns [`philosophy/philosophy.md`](../../philosophy/philosophy.md) into working judgment. The philosophy is canonical: if this skill and the philosophy disagree, follow the philosophy and fix the skill. Section references such as (§10) point into that file.
+This skill turns [`philosophy/philosophy.md`](../../philosophy/philosophy.md) into working judgment. The philosophy is canonical: if this skill and the philosophy disagree, follow the philosophy and fix the skill. Section references such as (§10) point into that file. When this skill is installed without the repository, the same file is at <https://github.com/Fexost/plim-design/blob/v1.0.0/philosophy/philosophy.md>.
 
 The goal is not prettier output. The goal is better decisions: every significant visual or behavioural choice should have a reason you can state (§2).
 

@@ -5,7 +5,25 @@ All notable changes to this repository will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) where applicable.
 
-## [Unreleased]
+## [1.0.0] - 2026-09-24
+
+First public release. Plim Design is a philosophy and an agent skill library, not a visual theme. Install with `npx skills add Fexost/plim-design`.
+
+### Stable capabilities
+
+- Canonical philosophy and manifesto: intentional interfaces, with no prescribed look.
+- Design reasoning: decision model, distinctions, tensions, outcomes, and human judgment within accessibility requirements.
+- Accessibility as a constraint: requirements, above-floor improvements, and an explicit open record when a human rejects every accessible alternative.
+- Attention as a resource and a canonical state model, including combinations and transitions.
+- Agency and automation, decided by consequence, reversibility, confidence, intent, and frequency.
+- Greenfield foundations and density from product evidence, and preservation of existing design systems.
+- Evidence discipline for thin and code-only reviews, including who owns a decision.
+- Decision records for human decisions, conventions, foundations, and unresolved consequential issues, written only when an entry is warranted.
+- Interface language: voice, tone by state, and terminology.
+- Framework-agnostic skills (`plim-design`, `plim-review`, `plim-beautify`, `plim-accessibility`, `plim-responsive`) and an optional `plim-ui` implementation skill.
+- A behavioural evaluation suite. Evals check the skills; they do not define them.
+- Agent Skills CLI compatibility: `skills/<name>/SKILL.md` with `name` and `description` frontmatter.
+- A manual **Release** workflow (`.github/workflows/release.yml`). Run it from `main` to tag the version and publish the GitHub release.
 
 ### Added
 

@@ -16,6 +16,6 @@ Use Plim skills from this repository without rewriting them.
 | Core skill | [`skills/plim-design/SKILL.md`](../../skills/plim-design/SKILL.md) |
 | Workflows | [`recipes/`](../../recipes/) |
 
-> TODO: Add packaging or install script if the project later publishes a distributable skill bundle.
+Install the skills with `npx skills add Fexost/plim-design`. See the [repository README](../../README.md).
 
 Do not duplicate skill bodies into adapter files—link to `skills/*/SKILL.md` instead.

@@ -7,6 +7,7 @@ description: >-
   plim-ui repository. Covers precedence, component selection, composition,
   tokens, variants, states, accessibility, responsive behaviour, and theming.
   Never use it to replace an existing component system.
+license: MIT
 ---
 
 # Plim UI integration
