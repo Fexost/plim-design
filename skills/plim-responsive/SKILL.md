@@ -65,7 +65,7 @@ Adaptability (§8.9 of [`philosophy.md`](../../philosophy/philosophy.md)) means 
 
 ## Large, small, and in between
 
-- **Large displays:** use the space for supporting content, side-by-side detail, or more data for expert tasks, not for stretching. Constrain reading widths. Empty expanses are not luxury.
+- **Large displays:** use the space for supporting content, side-by-side detail, or more data for expert tasks, not for stretching content to fill the width. Constrain reading widths for prose. Generous empty space is legitimate when it is the product's character; space on its own is not what makes something luxurious.
 - **Small displays:** focus on the primary task; move chrome out of the way; keep actions within reach; mind landscape height.
 - **Intermediate widths** (tablets, split screens, zoomed desktops, narrow windows) are the most neglected. Test them explicitly; this is where two-column layouts crush and navigation patterns collide.
 

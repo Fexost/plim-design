@@ -39,6 +39,8 @@ Always load `plim-design` first; add others as the task requires.
 
 Worked reasoning: [`examples/case-studies/`](examples/case-studies/).
 
+[`evals/`](evals/) tests whether behaviour follows the skills. It is not guidance, and its scenarios withhold the answers. Don't load `evals/` while designing.
+
 ## Unfinished content
 
 The philosophy, manifesto, skills, `anti-patterns/`, and case studies are written; `anti-patterns/` is supporting depth, not an additional rule source. The topic directories (`foundations/`, `composition/`, `interaction/`, `accessibility/`, `patterns/`, `integrations/`, `recipes/`) are signposts: each file names the skill section that owns its topic. Follow the pointer; don't treat a signpost as authority, and don't fill one with new rules. Where the philosophy and skills are silent, state the uncertainty.

@@ -68,7 +68,7 @@ adapters/       Agent portability
 
 ## Status
 
-- **Written:** the [philosophy](philosophy/philosophy.md) and [manifesto](philosophy/manifesto.md), the six [skills](skills/), [anti-patterns](anti-patterns/) as supporting depth, and seventeen [case studies](examples/case-studies/).
+- **Written:** the [philosophy](philosophy/philosophy.md) and [manifesto](philosophy/manifesto.md), the six [skills](skills/) (with reference files for decision records, shared systems, and interface language), [anti-patterns](anti-patterns/) as supporting depth, seventeen [case studies](examples/case-studies/), and a behavioural [evaluation suite](evals/).
 - **Signposts:** foundations, composition, interaction, accessibility, patterns, integrations, and recipes point to the skill sections that own each topic. They hold no guidance of their own, by design, so that every concept has one source.
 
 ## License
